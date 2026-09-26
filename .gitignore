@@ -1,3 +1,4 @@
 out/*
 !out/.gitkeep
+site/
 __pycache__/

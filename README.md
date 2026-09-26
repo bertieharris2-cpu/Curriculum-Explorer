@@ -14,6 +14,9 @@ one shared HTML template, and a build script that bakes the data into the two pa
 - **Bettws Maths Curriculum Hub** — https://claude.ai/artifact/G7ZgXPAjHHUDJkphQ8K5ty
 - **Bettws PFA Curriculum Hub** — https://claude.ai/artifact/7ecDGZ4qhk3cJs66RNoXBf
 
+The same two pages are also published on GitHub Pages, which anyone can open without a
+Claude account: https://bertieharris2-cpu.github.io/Curriculum-Explorer/
+
 The pages never read the spreadsheet live. Each build bakes the dataset into the HTML;
 republishing updates the same links.
 
@@ -25,6 +28,9 @@ republishing updates the same links.
   register and New_Learning_Order).
 - `hub_template.html` — one template for both pages; `MODE` = `main` or `pfa` decides views.
 - `build.py` — stamps out `out/bettws-maths-hub.html` and `out/bettws-pfa-hub.html`.
+  `python3 build.py --site` builds the GitHub Pages copy into `site/` instead: the hubs link
+  to each other directly, and `index_template.html` becomes a landing page.
+- `.github/workflows/pages.yml` — rebuilds and republishes the GitHub Pages site.
 - `out/` — build output (git-ignored; safe to delete and rebuild).
 - `requirements.txt` — Python dependencies.
 
@@ -34,6 +40,11 @@ python3 extract.py
 python3 build.py
 ```
 Then publish both files in `out/` to their existing artifact URLs (above).
+
+The GitHub Pages copy updates by itself: when a new dataset (or a change to the scripts or
+template) lands on `main`, GitHub rebuilds both hubs and republishes them within a few
+minutes. Progress shows under the repo's **Actions** tab. Pull requests run the same build
+as a check but don't publish.
 Needs Python 3 with `pandas` and `openpyxl` (`pip install -r requirements.txt`).
 
 ## Rules the pages follow (from Bertie's rulings — keep them)

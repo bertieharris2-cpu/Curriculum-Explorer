@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>__TITLE__</title>
+<style>
+:root{
+  --paper:#FBF9F3; --ink:#1E2528; --ink2:#4A555A; --ink3:#7A8589; --rule:#D9D4C7; --panel:#F2EEE3;
+  --teal:#1F6F78; --teal-ink:#FFFFFF; --sand:#E7DAB9; --sand-ink:#5A4A22;
+  --plum:#7E3861; --amber:#B4711A; --green:#1B5A44; --grey:#6E777B; --red:#A23B2F;
+  --card:#FFFFFF; --focus:#1F6F78;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#14181A; --ink:#E9E6DD; --ink2:#B9B4A7; --ink3:#8A867B; --rule:#33393C; --panel:#1C2225;
+  --teal:#2B8C96; --sand:#5A4C2A; --sand-ink:#E7DAB9; --plum:#C777A4; --amber:#D9964A; --green:#5FB08E; --grey:#9AA3A7; --red:#E07A6E; --card:#1A1F22;
+}}
+:root[data-theme="dark"]{
+  --paper:#14181A; --ink:#E9E6DD; --ink2:#B9B4A7; --ink3:#8A867B; --rule:#33393C; --panel:#1C2225;
+  --teal:#2B8C96; --sand:#5A4C2A; --sand-ink:#E7DAB9; --plum:#C777A4; --amber:#D9964A; --green:#5FB08E; --grey:#9AA3A7; --red:#E07A6E; --card:#1A1F22;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px); height:100%}
+*{box-sizing:border-box}
+body{margin:0;height:100%;background:var(--paper);color:var(--ink);font:15px/1.45 "Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif}
+button{font:inherit;color:inherit;background:none;border:1px solid var(--rule);padding:6px 10px;cursor:pointer}
+button:hover{background:var(--panel)}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+a{color:var(--teal)}
+.app{display:grid;grid-template-columns:260px 1fr;min-height:100%}
+.side{border-right:1px solid var(--rule);background:var(--panel);padding:18px 16px 40px;position:sticky;top:0;height:100vh;overflow:auto}
+.brand{font-size:19px;font-weight:600;line-height:1.2;margin:0 0 2px}
+.brand small{display:block;font-size:12px;font-weight:400;color:var(--ink3);margin-top:4px}
+.other{display:block;margin:12px 0 18px;font-size:13px}
+.nav button{display:block;width:100%;text-align:left;border:0;padding:7px 8px;font-size:14px}
+.nav button.on{background:var(--teal);color:var(--teal-ink)}
+.nav h4{margin:18px 0 6px;font-size:12px;font-weight:600;color:var(--ink3)}
+.strands button{padding:5px 8px;font-size:13px;line-height:1.3}
+.strands button small{display:block;color:var(--ink3);font-size:11px}
+.strands button.on small{color:var(--teal-ink);opacity:.85}
+.main{padding:22px 34px 80px;max-width:1000px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:0 0 18px;padding:10px 12px;border:1px solid var(--rule);background:var(--card)}
+.toolbar label{font-size:13px;display:inline-flex;align-items:center;gap:5px;color:var(--ink2)}
+.toolbar input[type=search]{font:inherit;padding:6px 8px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);min-width:240px}
+.toolbar .grow{flex:1}
+h1{font-size:26px;font-weight:600;margin:0 0 4px;line-height:1.2}
+.sub{color:var(--ink2);margin:0 0 16px;font-size:14px}
+.sub em{font-style:normal;color:var(--ink3)}
+h2.strand{font-size:22px;font-weight:600;margin:28px 0 2px}
+.strandshort{color:var(--ink3);font-size:13px;margin:0 0 14px}
+.bar{background:var(--teal);color:var(--teal-ink);padding:8px 14px;margin:22px 0 0;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.bar .lv{font-weight:600;font-size:15px}
+.bar .cnt{font-size:12px;opacity:.85}
+.bar.sand{background:var(--sand);color:var(--sand-ink)}
+.bar.phase{background:var(--green);margin-top:14px;padding:6px 14px}
+.bar.phase .lv{font-size:14px}
+.bar.area{background:var(--plum)}
+.bigidea{font-style:italic;color:var(--ink2);padding:8px 14px 2px;border-left:1px solid var(--rule);border-right:1px solid var(--rule)}
+.ladnote{font-size:12px;color:var(--ink3);padding:4px 14px 0;border-left:1px solid var(--rule);border-right:1px solid var(--rule)}
+.ladnote b{color:var(--red);font-weight:600}
+.keep{break-inside:avoid}
+.card{border:1px solid var(--rule);border-top:0;background:var(--card);padding:10px 14px 10px;break-inside:avoid}
+.card:first-of-type{border-top:0}
+.stm{display:flex;gap:10px;align-items:flex-start}
+.tick{width:13px;height:13px;border:1.5px solid var(--ink2);flex:none;margin-top:4px;display:none}
+.showticks .tick{display:block}
+.stmtext{flex:1;font-size:15px}
+.stmtext.goal{font-weight:600}
+.stmtext.feeder{color:var(--ink2)}
+.code{font-size:11px;color:var(--amber);white-space:nowrap;margin-left:8px}
+.sub2{font-size:12px;color:var(--ink3);margin:0 0 3px}
+.why{color:var(--plum);font-size:13px;margin:5px 0 0 23px;font-style:italic}
+.why b{font-style:normal;font-weight:600;margin-right:6px}
+.lay{margin:6px 0 0 23px;font-size:13px}
+.lay .k{display:inline-block;min-width:78px;font-size:11px;font-weight:600;color:var(--ink3);vertical-align:top}
+.lay p{margin:2px 0;display:flex;gap:8px}
+.lay p span{flex:1}
+.lay p span.k{flex:none}
+.step span{color:var(--grey)}
+.probe span{color:var(--plum)}
+.advice span,.anchor span{color:var(--amber)}
+.misconception span{color:var(--red)}
+.link span{color:var(--green)}
+.ruling span,.rubric span,.exit span,.pending span,.note span{color:var(--ink2)}
+.bnote{font-size:12px;color:var(--ink3);margin:4px 0 0 23px}
+.tag{display:inline-block;font-size:11px;border:1px solid var(--rule);padding:0 5px;color:var(--ink3);margin:4px 4px 0 0}
+.tag.t{border-color:var(--plum);color:var(--plum)}
+.tag.gate{border-color:var(--red);color:var(--red)}
+.strandnotes{margin:14px 0 0;border:1px solid var(--rule);background:var(--panel);padding:10px 14px;font-size:13px}
+.strandnotes h4{margin:0 0 6px;font-size:13px}
+.strandnotes p{margin:3px 0;display:flex;gap:8px}
+.strandnotes p span:last-child{flex:1}
+.strandnotes .k{flex:none}
+.strandnotes .k{min-width:78px;font-size:11px;font-weight:600;color:var(--ink3)}
+.grid{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.grid th,.grid td{border:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
+.grid th{background:var(--panel);font-weight:600}
+.grid td.cell{cursor:pointer;text-align:center;min-width:64px}
+.grid td.L{background:var(--teal);color:var(--teal-ink)}
+.grid td.E{background:var(--sand);color:var(--sand-ink)}
+.grid td.cell small{display:block;font-size:10px;opacity:.9}
+.grid td.prov{outline:2px dashed var(--red);outline-offset:-3px}
+.legend{font-size:13px;color:var(--ink2);margin:10px 0}
+.legend span{display:inline-block;width:14px;height:14px;vertical-align:-2px;margin:0 4px 0 12px}
+.gaps td.st{white-space:nowrap}
+.gaps tr.open td:first-child{border-left:4px solid var(--amber)}
+.over{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin-top:14px}
+.over button{text-align:left;padding:12px;background:var(--card);border:1px solid var(--rule)}
+.over button b{display:block;font-size:15px;font-weight:600}
+.over button small{color:var(--ink3);font-size:12px}
+.over button .n{float:right;color:var(--teal);font-weight:600}
+.hit em{background:var(--sand);color:var(--sand-ink);font-style:normal;padding:0 2px}
+.empty{color:var(--ink3);padding:20px 0}
+.printhead{display:none}
+.wrap{overflow-x:auto}
+.readme{font-size:13px;color:var(--ink2);white-space:pre-wrap;border:1px solid var(--rule);padding:12px 14px;background:var(--card);max-height:320px;overflow:auto}
+@media (max-width:820px){
+  .app{grid-template-columns:1fr}
+  .side{position:static;height:auto;border-right:0;border-bottom:1px solid var(--rule)}
+  .nav{display:flex;flex-wrap:wrap;gap:4px}.nav button{width:auto}.nav h4{width:100%}
+  .strands{display:flex;flex-wrap:wrap;gap:4px}.strands button{width:auto}
+  .main{padding:16px 14px 60px}
+}
+@media print{
+  @page{size:A4;margin:16mm 15mm}
+  :root{--paper:#fff;--ink:#000;--ink2:#333;--ink3:#555;--rule:#999;--panel:#fff;--card:#fff;--teal:#1F6F78;--teal-ink:#fff;--sand:#E7DAB9;--sand-ink:#5A4A22;--plum:#7E3861;--amber:#B4711A;--green:#1B5A44;--grey:#555;--red:#A23B2F}
+  html,body{background:#fff;color:#000;font-size:10.5pt}
+  .side,.toolbar,.noprint{display:none !important}
+  .app{display:block}.main{padding:0;max-width:none}
+  .printhead{display:block;font-size:9pt;color:#555;border-bottom:1px solid #999;padding-bottom:4px;margin-bottom:10px}
+  .bar{margin-top:14px;break-after:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .bar.phase{break-after:avoid}
+  h2.strand{break-after:avoid;margin-top:18px}
+  .keep{break-inside:avoid}
+  .card{break-inside:avoid}
+  .grid td.L,.grid td.E{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  a{color:inherit;text-decoration:none}
+  .over button{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <h1 class="brand">__TITLE__<small>Built from the master dataset __VERSION__ · __BUILT__</small></h1>
+    <a class="other" href="__OTHER_URL__">__OTHER_LABEL__</a>
+    <nav class="nav" id="nav"></nav>
+    <div id="strandnav"></div>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+var MODE = "__MODE__";
+var D = JSON.parse(document.getElementById('data').textContent);
+var S = D.statements;
+var byId = {}; S.forEach(function(s){ byId[s.bettws_id]=s; });
+var LIFE = function(s){ return s.strand.indexOf('PFA ·')===0; };
+var NCP = 'Number, Calculation & Pattern';
+var LO = {}; D.levelOrder.forEach(function(l,i){ LO[l]=i; });
+var SO = {}; D.strandOrder.forEach(function(l,i){ SO[l]=i; });
+
+// Statement pools per page. Main hub: main-curriculum statements only, no PFA labelling.
+var POOL = MODE==='main'
+  ? S.filter(function(s){ return s.curriculum==='main' && !LIFE(s); })
+  : S.filter(function(s){ return s.pfa_class==='PFA-direct' || LIFE(s) || s.strand===NCP; });
+
+var state = { view: MODE==='main'?'overview':'overview', strand:null, level:null, q:'',
+  steps:true, probes:true, notes:true, ticks:false, feeders:true, internal:false };
+
+var VIEWS = MODE==='main' ? [
+  ['overview','Overview'],['strands','Statements by strand'],['spine','Number spine by phase'],
+  ['structure','Structure: ladder or exposure'],['order','WPS 3 new learning in order'],['gaps','Gap register'],['search','Search']
+] : [
+  ['overview','Overview'],['outcomes','The Outcomes (life statements)'],['destinations','Maths — the Destinations'],
+  ['route','Maths — the Number Route'],['threads','Threads'],['gaps','Gap register'],['search','Search']
+];
+
+function esc(t){ return (t==null?'':String(t)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function sortLevel(a,b){ return (LO[a]==null?99:LO[a]) - (LO[b]==null?99:LO[b]); }
+function uniq(arr){ var o={},r=[]; arr.forEach(function(v){ if(v!=null && !o[v]){o[v]=1;r.push(v);} }); return r; }
+function groupBy(arr,f){ var m={},keys=[]; arr.forEach(function(x){ var k=f(x); if(!(k in m)){m[k]=[];keys.push(k);} m[k].push(x); }); return {m:m,keys:keys}; }
+function short(strand){ return D.strandShort[strand]||''; }
+function ll(){ return D.levelOrder; }
+
+// ---------- render helpers ----------
+function renderNav(){
+  var n=document.getElementById('nav'); n.innerHTML='';
+  VIEWS.forEach(function(v){ var b=document.createElement('button'); b.textContent=v[1]; if(state.view===v[0]) b.className='on';
+    b.onclick=function(){ state.view=v[0]; state.strand=null; state.level=null; render(); }; n.appendChild(b); });
+  var sn=document.getElementById('strandnav'); sn.innerHTML='';
+  if(MODE==='main' && (state.view==='strands')){
+    var h=document.createElement('h4'); h.textContent='Strands'; sn.appendChild(h);
+    var wrap=document.createElement('div'); wrap.className='nav strands';
+    var strands=uniq(POOL.map(function(s){return s.strand;})).sort(function(a,b){return SO[a]-SO[b];});
+    var all=document.createElement('button'); all.textContent='All strands'; if(!state.strand) all.className='on';
+    all.onclick=function(){ state.strand=null; state.level=null; render(); }; wrap.appendChild(all);
+    strands.forEach(function(st){ var b=document.createElement('button'); b.innerHTML=esc(st)+'<small>'+esc(short(st).split(' — ')[0])+'</small>'; if(state.strand===st) b.className='on';
+      b.onclick=function(){ state.strand=st; state.level=null; render(); }; wrap.appendChild(b); });
+    sn.appendChild(wrap);
+  }
+}
+
+function toolbar(opts){
+  var h='<div class="toolbar">';
+  if(opts.search) h+='<input type="search" id="q" placeholder="Search statements, steps, probes, codes…" value="'+esc(state.q)+'">';
+  if(opts.layers){
+    h+='<label><input type="checkbox" id="o_steps" '+(state.steps?'checked':'')+'> steps</label>';
+    h+='<label><input type="checkbox" id="o_probes" '+(state.probes?'checked':'')+'> probes</label>';
+    h+='<label><input type="checkbox" id="o_notes" '+(state.notes?'checked':'')+'> notes &amp; advice</label>';
+    h+='<label><input type="checkbox" id="o_ticks" '+(state.ticks?'checked':'')+'> tick boxes</label>';
+  }
+  if(opts.feeders){
+    h+='<label><input type="checkbox" id="o_feeders" '+(state.feeders?'checked':'')+'> show stepping stones</label>';
+    h+='<label><input type="checkbox" id="o_internal" '+(state.internal?'checked':'')+'> show main-only statements</label>';
+  }
+  if(opts.levels){
+    h+='<label>Step <select id="o_level"><option value="">all</option>';
+    opts.levels.forEach(function(l){ h+='<option '+(state.level===l?'selected':'')+' value="'+esc(l)+'">'+esc(l)+'</option>'; });
+    h+='</select></label>';
+  }
+  h+='<span class="grow"></span><button id="printbtn">Print this view</button></div>';
+  return h;
+}
+function bindToolbar(){
+  var q=document.getElementById('q'); if(q){ q.oninput=function(){ state.q=q.value; if(state.view!=='search'){state.view='search';} renderMain(); renderNav(); var q2=document.getElementById('q'); if(q2){q2.focus(); q2.setSelectionRange(q2.value.length,q2.value.length);} }; }
+  ['steps','probes','notes','ticks','feeders','internal'].forEach(function(k){ var e=document.getElementById('o_'+k); if(e) e.onchange=function(){ state[k]=e.checked; renderMain(); }; });
+  var lv=document.getElementById('o_level'); if(lv) lv.onchange=function(){ state.level=lv.value||null; renderMain(); };
+  var p=document.getElementById('printbtn'); if(p) p.onclick=function(){ window.print(); };
+}
+function printhead(title){
+  var d=new Date();
+  return '<div class="printhead">'+esc(document.title)+' — '+esc(title)+' · dataset '+esc(D.version)+' · printed '+d.toLocaleDateString('en-GB')+'</div>';
+}
+
+var LAYER_LABEL={step:'Step',probe:'Probe',advice:'Advice',anchor:'Secure looks like',misconception:'Watch for',link:'Links',rubric:'E/D/S',exit:'Exit',ruling:'Ruling',pending:'Pending',note:'Note',entitlement:'Entitlement',tool:'Tool'};
+var LAYER_ORDER=['step','anchor','rubric','probe','advice','misconception','link','exit','ruling','pending','note','tool'];
+
+function layerRows(s){
+  var rows=s.layers.slice();
+  rows=rows.filter(function(r){
+    if(r.kind==='step') return state.steps;
+    if(r.kind==='probe') return state.probes;
+    return state.notes;
+  });
+  rows.sort(function(a,b){ return LAYER_ORDER.indexOf(a.kind)-LAYER_ORDER.indexOf(b.kind); });
+  if(!rows.length) return '';
+  var h='<div class="lay">';
+  var grouped=groupBy(rows,function(r){return r.kind;});
+  grouped.keys.forEach(function(k){
+    grouped.m[k].forEach(function(r,i){
+      h+='<p class="'+k+'"><span class="k">'+(i===0?esc(LAYER_LABEL[k]||k):'')+'</span><span>'+esc(r.text)+(r.ref?' <small>('+esc(r.ref)+')</small>':'')+'</span></p>';
+    });
+  });
+  return h+'</div>';
+}
+
+function card(s, o){
+  o=o||{};
+  var cls='stmtext'+(o.goal?' goal':'')+(o.feeder?' feeder':'');
+  var h='<div class="card" id="s-'+esc(s.bettws_id)+'">';
+  if(s.sub_strand && !o.noSub) h+='<div class="sub2">'+esc(s.sub_strand)+'</div>';
+  h+='<div class="stm"><span class="tick"></span><div class="'+cls+'">'+(o.hl?o.hl:esc(s.statement))+'<span class="code">'+esc(s.bettws_id)+'</span></div></div>';
+  if(MODE==='pfa' && s.purpose) h+='<div class="why"><b>Why</b>'+esc(s.purpose)+'</div>';
+  var tags='';
+  if(MODE==='pfa' && (s.delivery==='thread'||s.thread_tags)) tags+='<span class="tag t">[T] thread'+(s.thread_tags?' · '+esc(s.thread_tags):'')+'</span>';
+  if(s.alg){ if(s.alg.type) tags+='<span class="tag">'+esc(s.alg.type)+' · rung '+esc(s.alg.rung)+'</span>'; if(s.alg.gate) tags+='<span class="tag gate">GATE</span>'; }
+  if(s.contexts) s.contexts.split(';').forEach(function(c){ c=c.trim(); if(c) tags+='<span class="tag">'+esc(c)+'</span>'; });
+  if(tags && state.notes) h+='<div style="margin-left:23px">'+tags+'</div>';
+  if(state.notes && s.boundary_note) h+='<div class="bnote">'+esc(s.boundary_note)+'</div>';
+  if(state.notes && s.notes) h+='<div class="lay"><p class="advice"><span class="k">Notes</span><span>'+esc(s.notes)+'</span></p></div>';
+  h+=layerRows(s);
+  return h+'</div>';
+}
+
+function levelBar(level, list, extra){
+  var h='';
+  var isExp = list.some(function(s){return s.ladder_or_exposure==='Repeated exposure';});
+  var cls = 'bar'+(MODE==='main' && isExp ? ' sand':'');
+  h+='<div class="'+cls+'"><span class="lv">'+esc(level)+(extra?' — '+esc(extra):'')+'</span><span class="cnt">'+list.length+(MODE==='main' && list[0].ladder_or_exposure? ' · '+esc(list[0].ladder_or_exposure):'')+'</span></div>';
+  var ideas=uniq(list.map(function(s){return s.headline;}));
+  ideas.forEach(function(i){ h+='<div class="bigidea">'+esc(i)+'</div>'; });
+  if(MODE==='main' && state.notes){ var ln=uniq(list.map(function(s){return s.ladder_note;})); ln.forEach(function(n){ h+='<div class="ladnote">'+(/PROVISIONAL/.test(n)?'<b>Provisional — awaiting your tick.</b> ':'')+esc(n)+'</div>'; }); }
+  return h;
+}
+
+// Level bar + its statements. The bar and the first statement are wrapped so a title never strands at a page foot.
+function levelBlock(level, list, extra, cardOpts){
+  var h='<div class="keep">'+levelBar(level,list,extra);
+  var uniform=uniq(list.map(function(s){return s.sub_strand;})).length<=1;
+  list.forEach(function(s,i){ var o=cardOpts?cardOpts(s):{}; if(uniform) o.noSub=true; h+=card(s,o); if(i===0) h+='</div>'; });
+  if(list.length===0) h+='</div>';
+  return h;
+}
+
+function spineBlocks(list, cardOpts){
+  // NCP: level -> phase
+  var h='';
+  var byL=groupBy(list,function(s){return s.level;}); byL.keys.sort(sortLevel);
+  var wps1=byL.keys.filter(function(k){return k.indexOf('WPS 1')===0;});
+  if(wps1.length){
+    h+='<div class="bar"><span class="lv">WPS 1</span><span class="cnt">'+wps1.reduce(function(n,k){return n+byL.m[k].length;},0)+' statements in 10 phases</span></div>';
+    wps1.forEach(function(k){ var lst=byL.m[k]; h+=phaseBlock(lst,cardOpts); });
+  }
+  byL.keys.filter(function(k){return k.indexOf('WPS 1')!==0;}).forEach(function(k){
+    var lst=byL.m[k];
+    h+='<div class="bar"><span class="lv">'+esc(k)+'</span><span class="cnt">'+lst.length+' statements</span></div>';
+    var byP=groupBy(lst,function(s){return s.phase_number==null?'—':s.phase_number;});
+    byP.keys.sort(function(a,b){return (a==='—'?99:a)-(b==='—'?99:b);});
+    byP.keys.forEach(function(p){ h+=phaseBlock(byP.m[p],cardOpts); });
+  });
+  return h;
+}
+function phaseBlock(lst,cardOpts){
+  var s0=lst[0];
+  var title = s0.phase_number!=null ? 'Phase '+s0.phase_number+(s0.phase_title?' — '+s0.phase_title:'') : (s0.level.indexOf('WPS 1')===0? s0.level : 'No phase recorded');
+  var h='<div class="keep"><div class="bar phase"><span class="lv">'+esc(title)+'</span><span class="cnt">'+lst.length+'</span></div>';
+  var ideas=uniq(lst.map(function(s){return s.headline;})); ideas.forEach(function(i){ h+='<div class="bigidea">'+esc(i)+'</div>'; });
+  var uniform=uniq(lst.map(function(s){return s.sub_strand;})).length<=1;
+  lst.forEach(function(s,i){ var o=cardOpts?cardOpts(s):{}; if(uniform) o.noSub=true; h+=card(s,o); if(i===0) h+='</div>'; });
+  return h;
+}
+
+function strandNotes(strand){
+  var rows=D.strandLayers[strand]; if(!rows||!state.notes) return '';
+  var h='<div class="strandnotes"><h4>Strand-level rulings and notes</h4>';
+  rows.forEach(function(r){ h+='<p class="'+esc(r.kind)+'"><span class="k">'+esc(LAYER_LABEL[r.kind]||r.kind)+'</span><span>'+esc(r.text)+' <small>('+esc(r.ref)+')</small></span></p>'; });
+  return h+'</div>';
+}
+
+// ---------- views ----------
+function vOverview(){
+  var h='<h1>'+esc(document.title)+'</h1><p class="sub">'+(MODE==='main'
+    ? 'Every live main-curriculum statement in the Bettws Mathematics &amp; Numeracy framework, with its steps, probes and notes, read straight from the master dataset.'
+    : 'The PFA curriculum as it stands in the master dataset: the Outcomes (life statements), the maths Destinations beyond the number spine, and the Number Route through the spine.')
+    +' <em>Dataset '+esc(D.version)+', page built '+esc(D.built)+'. When the dataset moves on, this page is rebuilt from the new file.</em></p>';
+  if(MODE==='main'){
+    var strands=uniq(POOL.map(function(s){return s.strand;})).sort(function(a,b){return SO[a]-SO[b];});
+    h+='<div class="over">';
+    strands.forEach(function(st){ var n=POOL.filter(function(s){return s.strand===st;}).length;
+      h+='<button data-strand="'+esc(st)+'"><b>'+esc(st)+'<span class="n">'+n+'</span></b><small>'+esc(short(st))+'</small></button>'; });
+    h+='</div>';
+    h+='<p class="sub" style="margin-top:22px">'+POOL.length+' live statements. Teal bars are ladder cells (taught as a directed, gated sequence); sand bars are repeated exposure (accrues through routine, provision and enquiries). Where a WPS 3 cell is still provisional it says so under the bar.</p>';
+  } else {
+    var areas=[['outcomes','The Outcomes',S.filter(LIFE).length,'The life statements in five areas — the overarching end goals, each with its purpose line and steps.'],
+      ['destinations','The Destinations',POOL.filter(function(s){return !LIFE(s)&&s.strand!==NCP;}).length,'PFA-direct maths statements beyond the number spine, grouped by PFA area.'],
+      ['route','The Number Route',S.filter(function(s){return s.strand===NCP&&s.pfa_class==='PFA-direct';}).length+' goals','The number spine with the PFA goals in bold and the stepping stones beneath them.'],
+      ['threads','Threads',S.filter(function(s){return s.delivery==='thread'||s.thread_tags;}).length,'Statements that recur across contexts rather than being taught once.']];
+    h+='<div class="over">';
+    areas.forEach(function(a){ h+='<button data-view="'+a[0]+'"><b>'+esc(a[1])+'<span class="n">'+esc(a[2])+'</span></b><small>'+esc(a[3])+'</small></button>'; });
+    h+='</div>';
+    if(D.entitlement.length){ h+='<h2 class="strand" style="font-size:18px">Joining In — the experience entitlement</h2><div class="card" style="border-top:1px solid var(--rule)">';
+      D.entitlement.forEach(function(e){ h+='<p style="margin:3px 0;font-size:14px">'+esc(e.text)+'</p>'; }); h+='</div>'; }
+  }
+  return h;
+}
+
+function vStrands(){
+  var pool=POOL.filter(function(s){ return (!state.strand||s.strand===state.strand) && (!state.level||s.level===state.level); });
+  var levels=uniq(POOL.filter(function(s){return !state.strand||s.strand===state.strand;}).map(function(s){return s.level;})).sort(sortLevel);
+  var h=toolbar({layers:true,levels:levels})+printhead(state.strand||'All strands');
+  var byS=groupBy(pool,function(s){return s.strand;}); byS.keys.sort(function(a,b){return SO[a]-SO[b];});
+  if(!byS.keys.length) return h+'<p class="empty">Nothing matches that step in this strand.</p>';
+  byS.keys.forEach(function(st){
+    h+='<h2 class="strand">'+esc(st)+'</h2><p class="strandshort">'+esc(short(st))+'</p>';
+    var lst=byS.m[st];
+    if(st===NCP){ h+=spineBlocks(lst); }
+    else {
+      var byL=groupBy(lst,function(s){return s.level;}); byL.keys.sort(sortLevel);
+      byL.keys.forEach(function(l){ var arr=byL.m[l]; if(st==='Algebra') arr=arr.slice().sort(function(a,b){return (a.alg?a.alg.order:99)-(b.alg?b.alg.order:99);}); h+=levelBlock(l,arr,st==='Algebra'?'in teaching order':null); });
+    }
+    h+=strandNotes(st);
+  });
+  return h;
+}
+
+function vSpine(){
+  var lst=POOL.filter(function(s){return s.strand===NCP;});
+  var levels=uniq(lst.map(function(s){return s.level;})).sort(sortLevel);
+  var h=toolbar({layers:true,levels:levels})+printhead('Number spine by phase');
+  h+='<h2 class="strand">Number, Calculation &amp; Pattern — the number spine</h2><p class="strandshort">'+esc(short(NCP))+'. Phases are the teaching order within each step.</p>';
+  if(state.level) lst=lst.filter(function(s){return s.level===state.level;});
+  h+=spineBlocks(lst);
+  return h;
+}
+
+function vStructure(){
+  var STEPS=[['WPS 1',function(l){return l.indexOf('WPS 1')===0;}],['WPS 2.1',function(l){return l==='WPS 2.1'||l==='WPS 2.1/2.2 spiral';}],['WPS 2.2',function(l){return l==='WPS 2.2';}],['WPS 2.3',function(l){return l==='WPS 2.3';}],['WPS 2 (one level)',function(l){return l==='WPS 2 (collapsed)';}],['WPS 3',function(l){return l==='WPS 3';}]];
+  var strands=uniq(POOL.map(function(s){return s.strand;})).sort(function(a,b){return SO[a]-SO[b];});
+  var h=toolbar({})+printhead('Structure: ladder or repeated exposure');
+  h+='<h1>Structure — ladder or repeated exposure</h1><p class="sub">Each cell is one strand at one progression step. Teal means a ladder: the machinery is built there and must be taught as a directed sequence. Sand means repeated exposure: it accrues through routine, provision and enquiries. Dashed red cells are provisional and still need your tick (GAP-43). Click a cell to open its statements.</p>';
+  h+='<div class="legend"><span style="background:var(--teal)"></span>Ladder <span style="background:var(--sand)"></span>Repeated exposure <span style="border:2px dashed var(--red)"></span>Provisional</div>';
+  h+='<div class="wrap"><table class="grid"><thead><tr><th>Strand</th>'; STEPS.forEach(function(st){h+='<th>'+esc(st[0])+'</th>';}); h+='</tr></thead><tbody>';
+  strands.forEach(function(st){
+    h+='<tr><th>'+esc(st)+'</th>';
+    STEPS.forEach(function(sp){
+      var cell=POOL.filter(function(s){return s.strand===st&&sp[1](s.level);});
+      if(!cell.length){ h+='<td></td>'; return; }
+      var kinds=uniq(cell.map(function(s){return s.ladder_or_exposure;}));
+      var k=kinds[0]==='Ladder'?'L':(kinds[0]==='Repeated exposure'?'E':'');
+      var prov=cell.some(function(s){return /PROVISIONAL/.test(s.ladder_note||'');});
+      var lvl=uniq(cell.map(function(s){return s.level;})).sort(sortLevel)[0];
+      h+='<td class="cell '+k+(prov?' prov':'')+'" data-strand="'+esc(st)+'" data-level="'+esc(lvl)+'">'+cell.length+'<small>'+esc(kinds.join(' / ')||'—')+'</small></td>';
+    });
+    h+='</tr>';
+  });
+  h+='</tbody></table></div>';
+  return h;
+}
+
+function vOrder(){
+  var h=toolbar({})+printhead('WPS 3 new learning in teaching order');
+  h+='<h1>WPS 3 — new learning in teaching order</h1><p class="sub">The cross-strand list of things that have to be taught directly at WPS 3, in the order they are needed, with where each lands and which enquiries can carry it.</p>';
+  h+='<div class="wrap"><table class="grid"><thead><tr><th>#</th><th>Phase</th><th>What is taught</th><th>Lands in</th><th>Needs first</th><th>Enquiry homes</th><th>Flag</th></tr></thead><tbody>';
+  D.newLearningOrder.forEach(function(r){ h+='<tr><td>'+esc(r.order)+'</td><td>'+esc(r.phase)+'</td><td>'+esc(r.item)+'</td><td>'+esc(r.lands_in)+'</td><td>'+esc(r.needs_first)+'</td><td>'+esc(r.enquiry_homes)+'</td><td>'+esc(r.flag)+'</td></tr>'; });
+  return h+'</tbody></table></div>';
+}
+
+function vGaps(){
+  var h=toolbar({})+printhead('Gap register');
+  var open=D.gaps.filter(function(g){return g.open;}), closed=D.gaps.filter(function(g){return !g.open;});
+  h+='<h1>Gap register</h1><p class="sub">'+open.length+' open, '+closed.length+' resolved. Open items have an amber edge.</p>';
+  function tbl(list){ var t='<div class="wrap"><table class="grid gaps"><thead><tr><th>Gap</th><th>Item</th><th>Status</th><th>Note</th></tr></thead><tbody>';
+    list.forEach(function(g){ t+='<tr class="'+(g.open?'open':'')+'"><td>'+esc(g.gap_id)+'</td><td>'+esc(g.item)+'</td><td class="st">'+esc(g.status)+'</td><td>'+esc(g.note)+'</td></tr>'; }); return t+'</tbody></table></div>'; }
+  h+='<h2 class="strand" style="font-size:18px">Open</h2>'+tbl(open)+'<h2 class="strand" style="font-size:18px">Resolved</h2>'+tbl(closed);
+  return h;
+}
+
+function vSearch(){
+  var h=toolbar({search:true,layers:true})+printhead('Search: '+state.q);
+  var q=state.q.trim().toLowerCase();
+  if(q.length<2) return h+'<p class="empty">Type at least two characters. Searches statement wording, codes, headlines, steps, probes, notes and purpose lines.</p>';
+  var re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig');
+  var hits=POOL.filter(function(s){
+    var blob=[s.bettws_id,s.statement,s.headline,s.sub_strand,s.notes,s.boundary_note,MODE==='pfa'?s.purpose:'',s.phase_title].join(' ')+' '+s.layers.map(function(l){return l.text;}).join(' ');
+    return blob.toLowerCase().indexOf(q)>=0;
+  });
+  h+='<p class="sub">'+hits.length+' statements match.</p>';
+  var byS=groupBy(hits,function(s){return s.strand;}); byS.keys.sort(function(a,b){return SO[a]-SO[b];});
+  byS.keys.forEach(function(st){
+    h+='<div class="keep"><div class="bar"><span class="lv">'+esc(st)+'</span><span class="cnt">'+byS.m[st].length+'</span></div>';
+    byS.m[st].sort(function(a,b){return sortLevel(a.level,b.level);}).forEach(function(s,i){ var hl=esc(s.statement).replace(re,'<em>$1</em>'); h+=card(s,{hl:'<span class="hit">'+hl+'</span> <span class="tag">'+esc(s.level)+'</span>'}); if(i===0) h+='</div>'; });
+  });
+  return h;
+}
+
+// PFA views
+function vOutcomes(){
+  var life=S.filter(LIFE).slice().sort(function(a,b){return (a.sort_order||9999)-(b.sort_order||9999);});
+  var h=toolbar({layers:true})+printhead('The Outcomes');
+  h+='<h1>The PFA Curriculum — the Outcomes</h1><p class="sub">The life statements in five areas. Each carries a purpose line (why it exists), and steps beneath (the practice, never assessed). E/D/S is judged on the statement itself.</p>';
+  var byA=groupBy(life,function(s){return s.strand;});
+  byA.keys.forEach(function(a){
+    var lst=byA.m[a];
+    h+='<div class="keep"><div class="bar area"><span class="lv">'+esc(a.replace('PFA · ',''))+'</span><span class="cnt">'+lst.length+' statements · '+esc(short(a).split(' — ')[1]||'')+'</span></div>';
+    lst.forEach(function(s,i){ h+=card(s,{goal:true}); if(i===0) h+='</div>'; });
+  });
+  return h;
+}
+function vDestinations(){
+  var dest=POOL.filter(function(s){return !LIFE(s)&&s.strand!==NCP;});
+  var h=toolbar({layers:true})+printhead('PFA Maths — the Destinations');
+  h+='<h1>PFA Maths — the Destinations</h1><p class="sub">The PFA-direct maths statements beyond the number spine — '+dest.length+' statements grouped by PFA area. A statement whose main-curriculum home is elsewhere (pie charts in Angles &amp; Rotation, say) sits here in its PFA area.</p>';
+  var byA=groupBy(dest,function(s){return s.pfa_area||s.strand;});
+  byA.keys.sort(function(a,b){ var ia=SO[a]==null?50:SO[a], ib=SO[b]==null?50:SO[b]; return ia-ib||a.localeCompare(b); });
+  byA.keys.forEach(function(a){
+    var lst=byA.m[a].slice().sort(function(x,y){return sortLevel(x.level,y.level)||x.bettws_id.localeCompare(y.bettws_id);});
+    h+='<div class="keep"><div class="bar"><span class="lv">'+esc(a)+'</span><span class="cnt">'+lst.length+'</span></div>';
+    lst.forEach(function(s,i){ h+=card(s,{goal:true,hl:esc(s.statement)+' <span class="tag">'+esc(s.level)+(s.strand!==a?' · '+esc(s.strand):'')+'</span>'}); if(i===0) h+='</div>'; });
+  });
+  return h;
+}
+function vRoute(){
+  var lst=S.filter(function(s){return s.strand===NCP;});
+  var levels=uniq(lst.map(function(s){return s.level;})).sort(sortLevel);
+  var h=toolbar({layers:true,feeders:true,levels:levels})+printhead('PFA Maths — the Number Route');
+  h+='<h1>PFA Maths — the Number Route</h1><p class="sub">The number spine as the PFA route reads it: goals in bold, stepping stones in grey beneath them. Statements that belong to the main curriculum only are hidden unless you switch them on.</p>';
+  lst=lst.filter(function(s){ if(state.level&&s.level!==state.level) return false; if(s.pfa_class==='PFA-direct') return true; if(s.pfa_class==='PFA-feeder') return state.feeders; return state.internal; });
+  h+=spineBlocks(lst,function(s){ return {goal:s.pfa_class==='PFA-direct', feeder:s.pfa_class!=='PFA-direct'}; });
+  return h;
+}
+function vThreads(){
+  var th=S.filter(function(s){return s.delivery==='thread'||s.thread_tags;});
+  var h=toolbar({layers:true})+printhead('Threads');
+  h+='<h1>Threads</h1><p class="sub">Capabilities that should recur across contexts rather than be ticked once. Grouped by thread tag; statements marked as a thread without a tag sit under "delivery thread".</p>';
+  var byT=groupBy(th,function(s){return s.thread_tags||'delivery thread';}); byT.keys.sort();
+  byT.keys.forEach(function(t){ h+='<div class="keep"><div class="bar area"><span class="lv">'+esc(t)+'</span><span class="cnt">'+byT.m[t].length+'</span></div>';
+    byT.m[t].forEach(function(s,i){ h+=card(s,{hl:esc(s.statement)+' <span class="tag">'+esc(s.strand.replace('PFA · ',''))+'</span>'}); if(i===0) h+='</div>'; }); });
+  return h;
+}
+
+function renderMain(){
+  var m=document.getElementById('main');
+  var v=state.view, h='';
+  if(v==='overview') h=vOverview();
+  else if(v==='strands') h=vStrands();
+  else if(v==='spine') h=vSpine();
+  else if(v==='structure') h=vStructure();
+  else if(v==='order') h=vOrder();
+  else if(v==='gaps') h=vGaps();
+  else if(v==='search') h=vSearch();
+  else if(v==='outcomes') h=vOutcomes();
+  else if(v==='destinations') h=vDestinations();
+  else if(v==='route') h=vRoute();
+  else if(v==='threads') h=vThreads();
+  m.innerHTML=h;
+  m.className='main'+(state.ticks?' showticks':'');
+  bindToolbar();
+  m.querySelectorAll('[data-strand]').forEach(function(el){ el.onclick=function(){ state.view='strands'; state.strand=el.getAttribute('data-strand'); state.level=el.getAttribute('data-level')||null; render(); window.scrollTo(0,0); }; });
+  m.querySelectorAll('[data-view]').forEach(function(el){ el.onclick=function(){ state.view=el.getAttribute('data-view'); render(); }; });
+}
+function render(){ renderNav(); renderMain(); }
+render();
+</script>
+</body>
+</html>

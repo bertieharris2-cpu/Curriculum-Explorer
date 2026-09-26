@@ -1,0 +1,62 @@
+# Rebuilds both hubs and publishes them to GitHub Pages whenever the dataset,
+# template or build scripts change on main. Can also be run by hand from the Actions tab.
+name: Build and publish hubs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dataset/**'
+      - 'extract.py'
+      - 'build.py'
+      - 'hub_template.html'
+      - 'index_template.html'
+      - 'requirements.txt'
+      - '.github/workflows/pages.yml'
+  pull_request:
+    paths:
+      - 'dataset/**'
+      - 'extract.py'
+      - 'build.py'
+      - 'hub_template.html'
+      - 'index_template.html'
+      - 'requirements.txt'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python3 extract.py
+      - run: python3 build.py --site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    # Pull requests only check that the build works; publishing happens from main.
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

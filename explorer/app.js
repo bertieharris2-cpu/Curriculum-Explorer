@@ -802,6 +802,20 @@
     });
   }
 
+  // Saving a file. Inside the claude.ai viewer, saves go through its downloads capability
+  // (the viewer confirms the file); anywhere else, a normal browser download.
+  var viewerDownloads = null;
+  if (window.claude && typeof window.claude.use === 'function') {
+    try { window.claude.use('downloads').then(function (d) { viewerDownloads = d || null; }).catch(function () { viewerDownloads = null; }); } catch (e) { /* no viewer */ }
+  }
+  function saveFile(filename, blob) {
+    if (viewerDownloads) return viewerDownloads.save({ filename: filename, data: blob });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = filename;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 5000);
+    return Promise.resolve({ status: 'saved' });
+  }
+
   var STEP_GROUPS = [['Pre', ['Pre-4', 'Pre-5', 'Pre-6']], ['Step 1', ['1.1', '1.2']], ['Step 2', ['2.1', '2.2', '2.3']], ['Step 3', ['3.1', '3.2', '3.3']]];
   var DRAFT_KEY = 'bettws.explorer.cardDraft.v1', FAV_KEY = 'bettws.explorer.favourites.v1';
   var DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -960,8 +974,12 @@
     function say(elm, msg, warn) { elm.textContent = msg; elm.classList.toggle('warn', !!warn); }
     downloadBtn.addEventListener('click', function () {
       var data = readForm(); if (!data.intentions.length) return;
-      try { var name = fileName(data); makePdf(data).save(name); say(actionStatus, 'Saved ' + name + '.'); }
-      catch (err) { say(actionStatus, 'Sorry, the PDF could not be made: ' + err.message, true); }
+      var name = fileName(data), blob;
+      try { blob = makePdf(data).output('blob'); }
+      catch (err) { say(actionStatus, 'Sorry, the PDF could not be made: ' + err.message, true); return; }
+      say(actionStatus, 'Saving ' + name + '…');
+      saveFile(name, blob).then(function () { say(actionStatus, 'Saved ' + name + '.'); })
+        .catch(function (err) { say(actionStatus, err && err.code === 'declined' ? 'Not saved.' : 'Sorry, the PDF could not be saved' + (err && err.message ? ': ' + err.message : '.'), true); });
     });
     printBtn.addEventListener('click', function () {
       var data = readForm(); if (!data.intentions.length) return;
@@ -1031,9 +1049,8 @@
     });
     favExport.addEventListener('click', function () {
       var blob = new Blob([JSON.stringify({ app: 'learning-intentions', version: 1, favourites: favs }, null, 2)], { type: 'application/json' });
-      var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'learning-intentions-favourites.json';
-      document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(a.href); }, 5000);
-      say(favStatus, 'Exported ' + plural(favs.length, 'favourite.', 'favourites.'));
+      saveFile('learning-intentions-favourites.json', blob).then(function () { say(favStatus, 'Exported ' + plural(favs.length, 'favourite.', 'favourites.')); })
+        .catch(function (err) { say(favStatus, err && err.code === 'declined' ? 'Not exported.' : 'Sorry, the file could not be saved.', true); });
     });
     favImport.addEventListener('click', function () { favFile.click(); });
     favFile.addEventListener('change', function () {

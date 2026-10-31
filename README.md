@@ -20,7 +20,7 @@ database, no analytics, no tracking of any kind.
 
 | Page | GitHub Pages (no account needed) | claude.ai copy |
 | --- | --- | --- |
-| Curriculum Explorer (staff) | https://bertieharris2-cpu.github.io/Curriculum-Explorer/explorer/ | see the repository's latest session notes |
+| Curriculum Explorer (staff) | https://bertieharris2-cpu.github.io/Curriculum-Explorer/explorer/ | https://claude.ai/artifact/Y32QAUiZvCjnSHR4Nn14Jf |
 | Curriculum Explorer (Bertie's version) | https://bertieharris2-cpu.github.io/Curriculum-Explorer/explorer-bertie/ | |
 | Maths Curriculum Hub | https://bertieharris2-cpu.github.io/Curriculum-Explorer/bettws-maths-hub.html | https://claude.ai/artifact/G7ZgXPAjHHUDJkphQ8K5ty |
 | PFA Curriculum Hub | https://bertieharris2-cpu.github.io/Curriculum-Explorer/bettws-pfa-hub.html | https://claude.ai/artifact/7ecDGZ4qhk3cJs66RNoXBf |

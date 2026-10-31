@@ -1,0 +1,3107 @@
+{
+"version": "v1.21",
+"built": "2026-10-31",
+"counts": {
+"total": 511,
+"curriculum": {
+"main": 447,
+"pfa": 60,
+"both": 4
+},
+"strand": {
+"Number, Calculation & Pattern": 206,
+"Statistics": 45,
+"Money": 21,
+"Fractions, Decimals & Percentages": 21,
+"Time — Calendar Structure": 15,
+"Shape in Use — Fitting & Constructing": 15,
+"Position, Direction & Movement": 14,
+"PFA · Managing Myself": 14,
+"PFA · Participating in Society": 14,
+"PFA · Joining In & Belonging": 13,
+"Time — Telling the Time": 12,
+"PFA Maths": 12,
+"Shape in Use — Area & Perimeter": 11,
+"Angles & Rotation": 11,
+"Algebra": 11,
+"Length & Height": 10,
+"Mass": 10,
+"Capacity": 10,
+"Temperature": 9,
+"Probability": 8,
+"Time — Analogue Clock": 7,
+"Duration — Time as a Measure": 7,
+"PFA · Managing a Home": 6,
+"PFA · Managing Money": 5,
+"Shape in Use — Formal Ladder": 4
+}
+},
+"statements": {
+"MON-2.1-01": {
+"strand": "Money",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can sort the coins into their families, and say which is worth more — even when the more valuable coin is smaller."
+},
+"MON-2.1-02": {
+"strand": "Money",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can sort coins and put them in order of value."
+},
+"MON-2.1-03": {
+"strand": "Money",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can make a small amount by counting pennies."
+},
+"MON-2.1-04": {
+"strand": "Money",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can go through the whole process of buying something, with support — hand over the money, wait, take what comes back, say thank you."
+},
+"MON-2.2-01": {
+"strand": "Money",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can count an amount made of different coins."
+},
+"MON-2.2-02": {
+"strand": "Money",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can make the same amount in more than one way."
+},
+"MON-2.2-03": {
+"strand": "Money",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can choose coins to pay a price up to £1."
+},
+"MON-2.2-04": {
+"strand": "Money",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can read a price label, including pounds and pence."
+},
+"MON-2.2-05": {
+"strand": "Money",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can work out whether I have enough money — for something up to about £2."
+},
+"MON-2.2-06": {
+"strand": "Money",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can work out change, and I know why change comes back."
+},
+"MON-2.3-01": {
+"strand": "Money",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can pay for myself in a real shop, choosing sensible coins or notes."
+},
+"MON-2.3-02": {
+"strand": "Money",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can check my change and say what to do if it looks wrong."
+},
+"MON-2.3-03": {
+"strand": "Money",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can work out which is better value, using the shelf label to help me."
+},
+"MON-2.3-04": {
+"strand": "Money",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can estimate whether I have enough for two or three things."
+},
+"MON-2.3-05": {
+"strand": "Money",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can keep track of what I have spent and what is left, across a day or a trip."
+},
+"MON-3-01": {
+"strand": "Money",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can keep track of money coming in and going out, and work out whether there is enough."
+},
+"MON-3-02": {
+"strand": "Money",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can work out profit and loss in a real buying-and-selling situation."
+},
+"MON-3-03": {
+"strand": "Money",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can work out best value, including working out the price per unit myself."
+},
+"MON-3-04": {
+"strand": "Money",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can read a bank statement or a payslip and find the figures that matter."
+},
+"MON-3-05": {
+"strand": "Money",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can read a receipt and explain what it shows."
+},
+"MON-3-06": {
+"strand": "Money",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can recognise persuasive pricing — offers that are not actually savings."
+},
+"FDP-2.1-01": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can share things fairly, and I know that fair means equal."
+},
+"FDP-2.1-02": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can split a whole thing into two equal parts, and put it back together."
+},
+"FDP-2.1-03": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can use the word half, and say what the whole is."
+},
+"FDP-2.2-01": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can split a whole into four equal parts and name one part a quarter."
+},
+"FDP-2.2-02": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can split into three equal parts and name one part a third."
+},
+"FDP-2.2-03": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I know the bottom number tells me how many equal parts to make."
+},
+"FDP-2.2-04": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can find half and a quarter of a group of things."
+},
+"FDP-2.2-05": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can show that two quarters cover the same as one half."
+},
+"FDP-2.2-06": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can spot when something is NOT a fair half or quarter."
+},
+"FDP-2.3-01": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can find halves, quarters and thirds of amounts."
+},
+"FDP-2.3-02": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can use fractions like three quarters and two thirds in real situations."
+},
+"FDP-2.3-03": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can compare simple fractions by reasoning."
+},
+"FDP-2.3-04": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can read a fraction — what the top number and the bottom number each tell me."
+},
+"FDP-2.3-05": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can link half to 0.5 and 50% in money and measures."
+},
+"FDP-3-01": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use the everyday set by heart: ½ = 0.5 = 50%, ¼ = 0.25 = 25%, ¾ = 0.75 = 75%, one tenth = 0.1 = 10%."
+},
+"FDP-3-02": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can find fractions and percentages of real amounts — discounts, portions, measures."
+},
+"FDP-3-03": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use a fraction as a division, and I know that \"of\" means take a part."
+},
+"FDP-3-04": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can compare and order fractions, decimals and percentages by reasoning, not by calculating."
+},
+"FDP-3-05": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can choose the most useful form for a problem, and say why."
+},
+"FDP-3-06": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can estimate first, use a calculator sensibly, and check the answer looks right."
+},
+"FDP-3-07": {
+"strand": "Fractions, Decimals & Percentages",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I know that amounts can be more than one whole — 1½, 125%."
+},
+"CAL-2.1-02": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can use yesterday, today and tomorrow."
+},
+"CAL-2.1-03": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can use a visual timetable or calendar to know what is happening and when during my day."
+},
+"CAL-2.2-01": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can place events within the week — before, after, which day."
+},
+"CAL-2.2-02": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can name the months and the seasons."
+},
+"CAL-2.2-03": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can find today’s date on a calendar."
+},
+"CAL-2.2-04": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can use a calendar to say when something is happening."
+},
+"CAL-2.3-01": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can use a calendar confidently, because I need to."
+},
+"CAL-2.3-02": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can work out how many days or weeks until something."
+},
+"CAL-2.3-03": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I know when something regular comes round again."
+},
+"CAL-3-01": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can plan across days and weeks — deadlines, appointments, commitments."
+},
+"CAL-3-02": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use digital calendars and reminders to organise myself."
+},
+"CAL-3-03": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can calculate durations spanning days, weeks and months."
+},
+"CAL-3-04": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can notice clashes and reschedule."
+},
+"TTT-2.1-01": {
+"strand": "Time — Telling the Time",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can read o’clock times, and I know the clock tells us when things happen."
+},
+"TTT-2.2-01": {
+"strand": "Time — Telling the Time",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can read times to the hour and half hour."
+},
+"TTT-2.2-02": {
+"strand": "Time — Telling the Time",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can say whether one time is before or after another."
+},
+"TTT-2.2-03": {
+"strand": "Time — Telling the Time",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can be given a time and do the thing when the clock reaches it."
+},
+"TTT-2.3-01": {
+"strand": "Time — Telling the Time",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can read any digital time accurately, including the minutes."
+},
+"TTT-2.3-02": {
+"strand": "Time — Telling the Time",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can use am and pm."
+},
+"TTT-2.3-03": {
+"strand": "Time — Telling the Time",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can read and use 24-hour times."
+},
+"TTT-2.3-04": {
+"strand": "Time — Telling the Time",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can work out how many minutes and hours until something."
+},
+"TTT-3-01": {
+"strand": "Time — Telling the Time",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can read clocks accurately and work out times, durations and start and finish times."
+},
+"TTT-3-02": {
+"strand": "Time — Telling the Time",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can convert between 12-hour and 24-hour times."
+},
+"TTT-3-04": {
+"strand": "Time — Telling the Time",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can plan a sequence of events with times attached."
+},
+"LEN-2-01": {
+"strand": "Length & Height",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can compare and order things by how long or tall they are."
+},
+"LEN-2-02": {
+"strand": "Length & Height",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can measure length using cubes, hands or footsteps, and count them."
+},
+"LEN-2-04": {
+"strand": "Length & Height",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can measure in centimetres and metres using a ruler, tape or metre stick."
+},
+"LEN-2-06": {
+"strand": "Length & Height",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can say and record a measurement with its unit, so someone else knows what I measured in."
+},
+"LEN-2-07": {
+"strand": "Length & Height",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can estimate a length before measuring, and then check."
+},
+"LEN-3-01": {
+"strand": "Length & Height",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can estimate, measure and record length accurately, choosing the right unit and instrument."
+},
+"LEN-3-02": {
+"strand": "Length & Height",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can convert between units of length using place value."
+},
+"LEN-3-03": {
+"strand": "Length & Height",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can estimate lengths and judge whether an answer is reasonable."
+},
+"LEN-3-04": {
+"strand": "Length & Height",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can calculate with lengths — totals, differences, cutting to size."
+},
+"LEN-3-05": {
+"strand": "Length & Height",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can solve real fitting problems: will the furniture fit through the door, along the wall."
+},
+"MAS-2-01": {
+"strand": "Mass",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can compare and order things by how heavy they are, including using a balance."
+},
+"MAS-2-02": {
+"strand": "Mass",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can measure mass using cubes or weights, and count them."
+},
+"MAS-2-04": {
+"strand": "Mass",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can read mass in grams and kilograms on a scale."
+},
+"MAS-2-06": {
+"strand": "Mass",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can say and record a mass with its unit, so someone else knows what I measured in."
+},
+"MAS-2-07": {
+"strand": "Mass",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can estimate a mass before weighing, and then check."
+},
+"MAS-3-01": {
+"strand": "Mass",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can estimate, measure and record mass accurately, choosing the right unit and instrument."
+},
+"MAS-3-02": {
+"strand": "Mass",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can convert between units of mass using place value."
+},
+"MAS-3-03": {
+"strand": "Mass",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can estimate masses and judge reasonableness."
+},
+"MAS-3-04": {
+"strand": "Mass",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can calculate with mass — totals, differences, scaling a recipe up or down."
+},
+"MAS-3-05": {
+"strand": "Mass",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can work with real limits: postage bands, load limits, portion sizes."
+},
+"CAP-2-01": {
+"strand": "Capacity",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can compare containers by how much they hold, by filling and pouring."
+},
+"CAP-2-02": {
+"strand": "Capacity",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can measure how much a container holds using cups or scoops, and count them."
+},
+"CAP-2-04": {
+"strand": "Capacity",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can read millilitres and litres on a measuring jug."
+},
+"CAP-2-06": {
+"strand": "Capacity",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can say and record a capacity with its unit, so someone else knows what I measured in."
+},
+"CAP-2-07": {
+"strand": "Capacity",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can estimate how much before I measure, and then check."
+},
+"CAP-3-01": {
+"strand": "Capacity",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can estimate, measure and record capacity accurately, choosing the right unit and instrument."
+},
+"CAP-3-02": {
+"strand": "Capacity",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can convert between units of capacity using place value."
+},
+"CAP-3-03": {
+"strand": "Capacity",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can estimate capacities and judge reasonableness."
+},
+"CAP-3-04": {
+"strand": "Capacity",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can calculate with capacity — totals, differences, scaling a recipe."
+},
+"CAP-3-05": {
+"strand": "Capacity",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can compare value by volume: which bottle gives more for the money."
+},
+"TEM-2-01": {
+"strand": "Temperature",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can compare things by temperature — hotter, colder, warmer than."
+},
+"TEM-2-02": {
+"strand": "Temperature",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can put situations in order by how hot or cold they are."
+},
+"TEM-2-04": {
+"strand": "Temperature",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can read a thermometer in degrees."
+},
+"TEM-2-05": {
+"strand": "Temperature",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can guess how warm something is before I measure it, and then check."
+},
+"TEM-2-07": {
+"strand": "Temperature",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can say and record a temperature with its unit, so someone else knows what I measured in."
+},
+"TEM-3-01": {
+"strand": "Temperature",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can estimate, measure and record temperature, including below zero."
+},
+"TEM-3-02": {
+"strand": "Temperature",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Calculates temperature differences, including across zero."
+},
+"TEM-3-03": {
+"strand": "Temperature",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can interpret temperature data — weather charts, oven settings, fridge and freezer."
+},
+"TEM-3-04": {
+"strand": "Temperature",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Records temperature over time and represents it as data."
+},
+"FIT-2-01": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can choose a shape that will do the job."
+},
+"FIT-2-02": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can turn and position a shape so that it fits, and adjust rather than force."
+},
+"FIT-2-03": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can build from a model, a picture or a plan."
+},
+"FIT-2-04": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can pack things into a space sensibly."
+},
+"FIT-2-05": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can put shapes together to make a bigger shape."
+},
+"FIT-2-06": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can spot the same shape when it is turned round or a different size."
+},
+"FIT-3-01": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can plan a construction or layout before I build it, and change my plan when reality disagrees."
+},
+"FIT-3-02": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can unfold and rebuild real boxes, and see the net inside the solid."
+},
+"FIT-3-03": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can explain why shapes behave as they do — what makes something stable, what tessellates, what is strong."
+},
+"FIT-3-04": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can design and build to a brief — it must fit here, it must hold this."
+},
+"FIT-3-05": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can read and use a simple plan, elevation or drawing."
+},
+"AAP-2-01": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can cover a surface completely, with no gaps and no overlaps."
+},
+"AAP-2-02": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can measure round the edge of something — how much tape, ribbon or edging."
+},
+"AAP-2-03": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I know that around and inside are two different questions."
+},
+"AAP-2-04": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can estimate how much I will need, and then check."
+},
+"AAP-2-05": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can cover something and go round its edge for a real job — wrapping, edging a board, decorating — working out how much I need of each."
+},
+"AAP-3-01": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can calculate the area of rectangles, and the perimeter of straight-sided shapes."
+},
+"AAP-3-02": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can decide which measure a problem needs — paint needs area, fencing needs perimeter."
+},
+"AAP-3-03": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can solve real problems: how much paint, flooring, fencing or wrapping."
+},
+"AAP-3-04": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can estimate area and perimeter, and judge whether an answer is sensible."
+},
+"AAP-3-05": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can work out how many packs or rolls to buy, rounding up — because you cannot buy half a tin."
+},
+"AR-2.3-01": {
+"strand": "Angles & Rotation",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can make and describe turns — quarter, half, three-quarter and whole."
+},
+"AR-2.3-02": {
+"strand": "Angles & Rotation",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can follow and give instructions that include turns, inside a route."
+},
+"AR-2.3-03": {
+"strand": "Angles & Rotation",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can use clockwise and anticlockwise accurately."
+},
+"AR-2.3-04": {
+"strand": "Angles & Rotation",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can compare the size of turns — a bigger turn, a smaller turn, more or less turn."
+},
+"AR-2.3-05": {
+"strand": "Angles & Rotation",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can see a right angle as a quarter turn, in real corners and objects."
+},
+"AR-3-01": {
+"strand": "Angles & Rotation",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can measure, draw and name angles, and I know that angle is a measure of turn."
+},
+"AR-3-02": {
+"strand": "Angles & Rotation",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Recognises and uses right angles; compares angles as bigger or smaller turns."
+},
+"AR-3-03": {
+"strand": "Angles & Rotation",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Links fractions of a full turn to sectors of a circle."
+},
+"AR-3-04": {
+"strand": "Angles & Rotation",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can read and interpret pie charts, using proportion language: about half, about a quarter, most of, hardly any."
+},
+"AR-3-05": {
+"strand": "Angles & Rotation",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can answer questions from a pie chart and say what it shows about the whole group."
+},
+"AR-3-06": {
+"strand": "Angles & Rotation",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Estimates the size of a sector without calculating it."
+},
+"PDM-2.3-01": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can describe and follow a route using direction words — forwards, backwards, left, right, around, past, between."
+},
+"PDM-2.3-02": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can give clear, ordered instructions so someone else can follow my route accurately."
+},
+"PDM-2.3-03": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can use a compass, and the four compass points — north, south, east and west — to describe and follow direction."
+},
+"PDM-2.3-04": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can describe exactly where something is, using position words and a landmark."
+},
+"PDM-2.3-05": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can estimate and say how far as well as which way — in steps, metres or grid spaces."
+},
+"PDM-2.3-06": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can combine direction and distance — \"move three metres north, then turn right and go two metres\"."
+},
+"PDM-3-01": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use a map, plan or grid to find my way, and describe where something is precisely enough for someone else to find it."
+},
+"PDM-3-02": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can read and give coordinates on a grid, and use them to solve problems."
+},
+"PDM-3-03": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can plan and describe a route with turns, distances and directions."
+},
+"PDM-3-04": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use a digital map to plan a real journey, and judge whether what it tells me makes sense."
+},
+"STAT-2-02": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can use a Venn diagram when things belong to more than one group."
+},
+"STAT-2-03": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can use a Carroll diagram when the rule is a strict yes or no."
+},
+"STAT-2-04": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can use a list to plan what I am going to do."
+},
+"STAT-2-05": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can decide what information I need, and what to leave out."
+},
+"STAT-2-06": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can choose a sensible way to collect the data, and say why."
+},
+"STAT-2-07": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can collect and record data accurately, and keep it clear as I go."
+},
+"STAT-2-08": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can look back at how we collected our data and say what worked, what did not, and whether it answered our question."
+},
+"STAT-2-09": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can make a pictogram, block graph or bar chart from data I collected."
+},
+"STAT-2-10": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can use a key, and say why a chart needs one."
+},
+"STAT-2-11": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can use a scale, and I know each step stands for a fixed amount."
+},
+"STAT-2-12": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can label my chart and check it matches the data — every response placed, nothing missed, nothing counted twice."
+},
+"STAT-2-13": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can read a chart and answer questions about it, including questions that need more than one step."
+},
+"STAT-2-14": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can say what our data shows, use it to answer our question, and tell other people what we found."
+},
+"STAT-2-15": {
+"strand": "Statistics",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I know that a chart someone else made can be misleading, and I can say what makes me unsure about it."
+},
+"STAT-3-01": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Decides what data is needed and explains why it is relevant."
+},
+"STAT-3-02": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Identifies types of data — numbers, frequencies, times, measurements — and matches them to questions."
+},
+"STAT-3-03": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Collects discrete data accurately (counted, separate values)."
+},
+"STAT-3-04": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Collects continuous data accurately (measured values within a range)."
+},
+"STAT-3-05": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Chooses suitable methods for the question and the data type, and explains why."
+},
+"STAT-3-06": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Adapts and refines a collection method — changing rules, timing or recording structures when problems appear. (Devising from scratch: extension, not the bar.)"
+},
+"STAT-3-07": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Collects carefully and accurately, checking as they go."
+},
+"STAT-3-08": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Collects data without digital technology — tables, tallies, recording sheets."
+},
+"STAT-3-09": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can collect data with digital technology — spreadsheets, timers, apps."
+},
+"STAT-3-10": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can spot problems with data — irrelevant, missing or incorrect values — and explain why they matter."
+},
+"STAT-3-12": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Represents data accurately, including bar charts and line graphs."
+},
+"STAT-3-13": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Uses titles, labels, axes and keys so a chart can be read without explanation."
+},
+"STAT-3-14": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Chooses and applies suitable scales, including one unit representing more than one value, and explains what each step represents."
+},
+"STAT-3-15": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Plots with precision, and adjusts if the layout makes the data hard to read."
+},
+"STAT-3-18": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can read and interpret tables, bar charts, line graphs and pictograms — including representations I did not make."
+},
+"STAT-3-19": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Calculates totals and differences from data, including multi-step questions."
+},
+"STAT-3-21": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Identifies the mode and the range, and uses them to describe a data set."
+},
+"STAT-3-22": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Finds the median of a small ordered data set — physically first (lining up, taking the middle) — and uses it to describe what is typical."
+},
+"STAT-3-23": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can calculate the mean of a small data set, explain what it tells us, and when it misleads."
+},
+"STAT-3-24": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can explain how a graph can mislead — scale, baseline, categories, small samples."
+},
+"STAT-3-25": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can decide how well the data answers the question, and recognise what it cannot tell us."
+},
+"STAT-3-26": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Poses a follow-on question and suggests what data would answer it."
+},
+"PROB-2.3-01": {
+"strand": "Probability",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can say how likely something is — impossible, unlikely, likely, certain."
+},
+"PROB-2.3-02": {
+"strand": "Probability",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can say whether a game or a way of choosing is fair, and why."
+},
+"PROB-3-01": {
+"strand": "Probability",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Orders events by likelihood and justifies the order."
+},
+"PROB-3-02": {
+"strand": "Probability",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "Runs repeated trials in a game and records what actually happened."
+},
+"PROB-3-03": {
+"strand": "Probability",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can compare what happened with what was expected, and explain why they differ when trials are few."
+},
+"PROB-3-04": {
+"strand": "Probability",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can judge whether a game, spinner, dice or method of choosing is fair, using evidence."
+},
+"PROB-3-05": {
+"strand": "Probability",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use equally-likely reasoning: one chance in six, one in two — \"out of how many?\""
+},
+"PROB-3-06": {
+"strand": "Probability",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can recognise that more trials give a more trustworthy picture."
+},
+"1-P1-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 1",
+"curriculum": "main",
+"text": "I can notice numbers around me and show that I know they mean something."
+},
+"1-P1-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 1",
+"curriculum": "main",
+"text": "I can use number words when I talk and play, join in with counting, and give someone two or three things when they ask."
+},
+"1-P1-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 1",
+"curriculum": "main",
+"text": "I can use first, second and last in the things we do every day."
+},
+"1-P1-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 1",
+"curriculum": "main",
+"text": "I know I have five fingers on each hand and ten altogether, and I use my fingers to count in my own way."
+},
+"1-P1-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 1",
+"curriculum": "main",
+"text": "I can tell when one group has more, and when two groups are the same."
+},
+"1-P1-06": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 1",
+"curriculum": "main",
+"text": "I can join in with a pattern and show I know what is coming next."
+},
+"1-P1-07": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 1",
+"curriculum": "main",
+"text": "I can turn a puzzle piece to make it fit, build with blocks, cover things, and fit myself and my things into spaces."
+},
+"1-P1-08": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 1",
+"curriculum": "main",
+"text": "I can match things that go together — an object to its photo, a symbol to a real thing."
+},
+"1-P2-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 2",
+"curriculum": "main",
+"text": "I can count five things, one number for each thing."
+},
+"1-P2-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 2",
+"curriculum": "main",
+"text": "I can count back from five, count on from any number, and ask for one more to reach my target."
+},
+"1-P2-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 2",
+"curriculum": "main",
+"text": "I know the last number I say tells me how many there are — I do not need to count again."
+},
+"1-P2-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 2",
+"curriculum": "main",
+"text": "I can subitise up to three — I know how many without counting, however they are arranged."
+},
+"1-P2-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 2",
+"curriculum": "main",
+"text": "I can find, name and trace the numerals 1 to 5, and match them to the right amount."
+},
+"1-P2-06": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 2",
+"curriculum": "main",
+"text": "I can compare groups of objects up to five and say which has more, fewer or the same."
+},
+"1-P2-07": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 2",
+"curriculum": "main",
+"text": "I can copy a pattern and keep it going on my own."
+},
+"1-P2-08": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 2",
+"curriculum": "main",
+"text": "I can sort things into groups, name shapes, and count their sides."
+},
+"1-P2-09": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 2",
+"curriculum": "main",
+"text": "I can compare two things and say which is longer or taller, and put a few in order."
+},
+"1-P3-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 3",
+"curriculum": "main",
+"text": "I can subitise four and five, however they are arranged."
+},
+"1-P3-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 3",
+"curriculum": "main",
+"text": "I can have a go at making a pattern with three parts, and telling you the rule."
+},
+"1-P3-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 3",
+"curriculum": "main",
+"text": "I can say and follow where things go — in, on, under, next to, in front, behind, between, beside."
+},
+"1-P4-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 4",
+"curriculum": "main",
+"text": "I can count ten things reliably — things I can touch and things I cannot."
+},
+"1-P4-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 4",
+"curriculum": "main",
+"text": "I can count back from ten, count on from any number, and ask for one more to reach my target."
+},
+"1-P4-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 4",
+"curriculum": "main",
+"text": "I know that moving things around does not change how many there are."
+},
+"1-P4-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 4",
+"curriculum": "main",
+"text": "I can name and match all the numerals from 0 to 10, put them in order, and I know zero means none."
+},
+"1-P4-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 4",
+"curriculum": "main",
+"text": "I can estimate amounts up to ten, check by counting, and get better at guessing."
+},
+"1-P4-06": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 4",
+"curriculum": "main",
+"text": "I can have a go at following and giving directions — forwards, backwards, left, right, turn."
+},
+"1-P4-07": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 4",
+"curriculum": "main",
+"text": "I can hold two things and say which is heavier, check on a balance, and put a few in order."
+},
+"1-P5-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 5",
+"curriculum": "main",
+"text": "I can see six to ten as five and a bit, subitise them, and say the two parts — “five and three is eight”."
+},
+"1-P5-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 5",
+"curriculum": "main",
+"text": "I can have a go at saying whether an amount is odd or even by seeing if it pairs up."
+},
+"1-P5-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 5",
+"curriculum": "main",
+"text": "I can name and use shapes while I build and make."
+},
+"1-P6-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 6",
+"curriculum": "main",
+"text": "I can subitise on a tens frame, filled twos-wise or fives-wise, whichever way round it is — and even when the counters are not in the usual places."
+},
+"1-P6-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 6",
+"curriculum": "main",
+"text": "I can give and follow directions."
+},
+"1-P6-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 6",
+"curriculum": "main",
+"text": "I can draw a simple map of somewhere I know."
+},
+"1-P6-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 6",
+"curriculum": "main",
+"text": "I can measure length with units, and compare and order things."
+},
+"1-P7-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 7",
+"curriculum": "main",
+"text": "I can look at five and tell you the smaller amounts inside it, in more than one way."
+},
+"1-P7-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 7",
+"curriculum": "main",
+"text": "I can put two groups together to make five, take one away, and show that five can be made in more than one way."
+},
+"1-P7-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 7",
+"curriculum": "main",
+"text": "I can use equal to and the same as to talk about two groups that match."
+},
+"1-P7-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 7",
+"curriculum": "main",
+"text": "I can build models and make maps of real and imagined places, choosing what I need."
+},
+"1-P7-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 7",
+"curriculum": "main",
+"text": "I know the 1p coin, can count 1p coins to five, and can make an amount to use in our shop."
+},
+"1-P7-06": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 7",
+"curriculum": "main",
+"text": "I can talk about full and empty, pour between containers, measure by counting cups, and compare and order."
+},
+"1-P8-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 8",
+"curriculum": "main",
+"text": "I can look at four, three or two and tell you the smaller amounts inside, put them back together, and take away."
+},
+"1-P8-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 8",
+"curriculum": "main",
+"text": "I know my bonds to five, and I am starting to know bonds to four, three and two."
+},
+"1-P8-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 8",
+"curriculum": "main",
+"text": "I can talk about turns — a quarter turn, a half turn, a whole turn."
+},
+"1-P8-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 8",
+"curriculum": "main",
+"text": "I can make something symmetrical by folding or building both sides the same."
+},
+"1-P8-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 8",
+"curriculum": "main",
+"text": "I can measure weight with cubes on a balance, and compare and order things."
+},
+"1-P9-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 9",
+"curriculum": "main",
+"text": "I can look at ten and tell you the smaller amounts inside it, put them together and take away."
+},
+"1-P9-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 9",
+"curriculum": "main",
+"text": "I can find at least three different ways to make ten."
+},
+"1-P9-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 9",
+"curriculum": "main",
+"text": "I know all my bonds to five without objects, and I am starting to know some bonds to ten."
+},
+"1-P9-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 9",
+"curriculum": "main",
+"text": "I can picture what I am going to build before I build it, say where things go, and say which shapes will stack, roll or slide, and why."
+},
+"1-P9-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 9",
+"curriculum": "main",
+"text": "I can count 1p coins to ten, make any amount to 10p, and find different ways to make the same amount."
+},
+"1-P10-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 10",
+"curriculum": "main",
+"text": "I can sort things into groups for a real reason, and say the rule I used."
+},
+"1-P10-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 10",
+"curriculum": "main",
+"text": "I can collect what I need, keep track of what I have got, and make my own marks to remember."
+},
+"1-P10-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 10",
+"curriculum": "main",
+"text": "I can take part in a survey — vote, sort the answers, count each group, build a tower chart and say what it tells us."
+},
+"1-P10-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 10",
+"curriculum": "main",
+"text": "I know all my bonds to five straight away, on any day and in any situation — and I can use one to work out another."
+},
+"1-P10-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 10",
+"curriculum": "main",
+"text": "I know some bonds to ten straight away, and I can use a tens frame to work out the ones I do not know yet."
+},
+"1-P10-06": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 10",
+"curriculum": "main",
+"text": "I can write numerals, and write down what I did with objects as a number sentence like 3 + 2 = 5, and read one back by showing it."
+},
+"1-P10-07": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 10",
+"curriculum": "main",
+"text": "I know the equals sign means the same as."
+},
+"1-P10-08": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 10",
+"curriculum": "main",
+"text": "I can make a number in different ways without being asked to, and I know two different number sentences can show the same value."
+},
+"1-P10-09": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 1 · Phase 10",
+"curriculum": "main",
+"text": "I can use position and movement words accurately, and explain why a shape fits a space or does not."
+},
+"2.1-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can count forwards and backwards from any number within twenty."
+},
+"2.1-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can compare and order numbers to twenty, and find the numbers in between."
+},
+"2.1-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can place numbers on a number line and track, and estimate where one goes."
+},
+"2.1-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can say whether a number to twenty is odd or even, and explain how I know."
+},
+"2.1-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can exchange ten ones for a ten, and back again, and explain what happened."
+},
+"2.1-06": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can build any teen number as one ten and some ones, and partition it."
+},
+"2.1-07": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can build the numbers to twenty in rows of ten and see the pattern."
+},
+"2.1-08": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can say teen numbers both ways — thirteen, and ten-three."
+},
+"2.1-09": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can move between the dienes, the picture and the numeral."
+},
+"2.1-10": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I know that subtraction can mean taking away, and it can mean finding the difference."
+},
+"2.1-11": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can say one more and one less than any number to ten, and use it to calculate."
+},
+"2.1-12": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can swap the order of an addition to make it easier — the commutative law."
+},
+"2.1-13": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can say two more and two less using odds and evens, without counting through."
+},
+"2.1-14": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I know all my bonds to ten, and I can say why they are always two odds or two evens."
+},
+"2.1-15": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can give all four facts in a bond family from any one bond I know."
+},
+"2.1-16": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can choose between one more, one less, two more, two less and bonds to ten — and say why."
+},
+"2.1-17": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can see six to ten as five and a bit, and use it to calculate."
+},
+"2.1-18": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can add and subtract zero, and I know a number take itself is zero."
+},
+"2.1-19": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can recall doubles to five and the matching halves."
+},
+"2.1-20": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can use a double I know to work out a near double."
+},
+"2.1-21": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can record what I did using +, − and =."
+},
+"2.1-22": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can choose between doubles, near doubles, five-and-a-bit, zero, bonds to ten, one more and two more — and say why."
+},
+"2.1-23": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can spot next-door numbers, odds and evens, and use them to subtract."
+},
+"2.1-24": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can use the 7 tree and the 9 square to solve the last facts."
+},
+"2.1-25": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can choose a strategy for ANY fact within ten — and explain why I chose it."
+},
+"2.1-26": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can check a calculation using the inverse."
+},
+"2.1-27": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can solve ten-and-a-bit calculations and find the missing part."
+},
+"2.1-28": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can use my within-ten strategies on calculations within twenty."
+},
+"2.1-29": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can decide whether a problem is adding, taking away or finding a difference — and say how I knew."
+},
+"2.1-30": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can find the missing number wherever the box is."
+},
+"2.1-31": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can write number sentences that show the same result, and use the not-equal sign."
+},
+"2.1-32": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can use a fact I know to work out a bigger one."
+},
+"2.2-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can count to and across a hundred, forwards and backwards from any number."
+},
+"2.2-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can count in tens, twos and fives from any number, and continue the sequence."
+},
+"2.2-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can build any two-digit number with dienes and partition it into tens and ones."
+},
+"2.2-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I know that zero holds a place — 40 is four tens and no ones."
+},
+"2.2-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can compare and order numbers to a hundred, using <, > and =."
+},
+"2.2-06": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can lay the numbers out in rows of ten and use the pattern."
+},
+"2.2-07": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can say what happens to a number when I add ten."
+},
+"2.2-08": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can see any teen number as a ten and a bit, and use it to calculate."
+},
+"2.2-09": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can make ten first, and then add the rest."
+},
+"2.2-10": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can subtract across ten the same way — back to ten first, then the rest."
+},
+"2.2-11": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can use bonds to ten to work out bonds to twenty."
+},
+"2.2-12": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can recall doubles of six to ten and use them for near doubles."
+},
+"2.2-13": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can spot a hidden double — 6 + 8 is the same as 7 + 7."
+},
+"2.2-14": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can add and subtract nine and eight by adjusting from ten."
+},
+"2.2-15": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can subtract from the ten instead of through it."
+},
+"2.2-16": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can choose between making ten, doubles, hidden doubles and adjusting — and say why."
+},
+"2.2-17": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can say a multiple of ten two ways — sixty, and six tens."
+},
+"2.2-18": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can use a fact I know on tens — two add six is eight, so twenty add sixty is eighty."
+},
+"2.2-19": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can add and subtract ones to a two-digit number without crossing a ten."
+},
+"2.2-20": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can add and subtract tens to a two-digit number."
+},
+"2.2-21": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can add up to the next multiple of ten."
+},
+"2.2-22": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can add and subtract across a multiple of ten."
+},
+"2.2-23": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can add two two-digit numbers with a method I choose, and explain it."
+},
+"2.2-24": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can subtract a two-digit number from a two-digit number, choosing my method."
+},
+"2.2-25": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can decide whether to work it out in my head or write something down."
+},
+"2.2-26": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can solve a problem within a hundred and say which operation I need."
+},
+"2.2-27": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can find a missing number within a hundred, wherever it is in the sentence."
+},
+"2.2-28": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can write number sentences that show the same value, and explain why they match."
+},
+"2.2-29": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can round a number to the nearest ten and estimate an answer."
+},
+"2.2-30": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can estimate where any number to a hundred sits on a line."
+},
+"2.2-31": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can check my working and explain how I know it is right."
+},
+"2.3-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can count in hundreds, fifties and tens to a thousand, forwards and backwards from any number."
+},
+"2.3-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can build any three-digit number and exchange in both directions."
+},
+"2.3-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can partition a three-digit number into hundreds, tens and ones."
+},
+"2.3-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can partition a number in more than one way — 245 is 200 and 40 and 5, and it is also 100 and 140 and 5."
+},
+"2.3-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can compare and order numbers to a thousand, and find one, ten or a hundred more or less."
+},
+"2.3-07": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can use a fact I know on hundreds — three add four is seven, so three hundred add four hundred is seven hundred."
+},
+"2.3-08": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can add and subtract 1, 10 and 100 to any three-digit number."
+},
+"2.3-09": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can add and subtract a two-digit number to a three-digit number."
+},
+"2.3-10": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can adjust and use near doubles at this scale."
+},
+"2.3-11": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can estimate an answer before I work it out."
+},
+"2.3-12": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can decide whether to work it out in my head or write something down — and say why."
+},
+"2.3-13": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can set out a calculation in columns and say why the digits line up that way."
+},
+"2.3-14": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can use column addition with exchanging, and I can show what the exchange means."
+},
+"2.3-15": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can use column subtraction with exchanging."
+},
+"2.3-16": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can subtract across a zero — like 305 minus 128."
+},
+"2.3-17": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can check a written calculation, and I can say when the column method was not the best choice."
+},
+"2.3-18": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can turn a multiplication round to make it easier."
+},
+"2.3-19": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can recall or work out the two, five and ten times tables, my own way."
+},
+"2.3-20": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can double twice to get the four times table, and three times for the eight."
+},
+"2.3-21": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can take one lot off the ten times table to get the nine."
+},
+"2.3-22": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can split a number into bits I know — so three lots is two lots and one more."
+},
+"2.3-24": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can say the division fact that goes with a multiplication fact I know."
+},
+"2.3-25": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can work out how many groups of a size fit — how many fours in thirty-two?"
+},
+"2.3-26": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can share a quantity equally between a number of people."
+},
+"2.3-27": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can tell whether a real situation is asking me to group or to share."
+},
+"2.3-28": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can divide with something left over, and say what the leftover means."
+},
+"2.3-29": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can decide whether to round up or down, depending on the question."
+},
+"2.3-30": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can check a division by multiplying back."
+},
+"2.3-31": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can multiply a two-digit number by a one-digit number by splitting it up."
+},
+"2.3-32": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can use short multiplication, and I can see where the grid went."
+},
+"2.3-33": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can divide a two-digit number by grouping, and then use short division."
+},
+"2.3-34": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can estimate first and check my answer against the estimate."
+},
+"2.3-35": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can choose the operation a problem needs, and say how I knew."
+},
+"2.3-36": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can solve a problem that takes two steps."
+},
+"2.3-37": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can use scaling language — three times as long, twice as heavy."
+},
+"2.3-38": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can find a missing number using the inverse, at this scale."
+},
+"2.3-39": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can write different calculations that give the same answer, and explain why they match."
+},
+"2.3-40": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can explain my method in writing as well as out loud."
+},
+"2.3-41": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can say whether an answer is reasonable, and what made me think so."
+},
+"2.3-06A": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can place a number to a thousand on a number line."
+},
+"2.3-06B": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can round a number to the nearest ten or hundred."
+},
+"M1-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Makes groups with the same number in each"
+},
+"M1-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Says how many groups there are, and how many altogether"
+},
+"M1-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Notices when groups are NOT equal, and fixes it"
+},
+"M1-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Uses the language: groups of, lots of, each, altogether"
+},
+"M2-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Shares a small quantity fairly between two or three, one at a time"
+},
+"M2-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Checks that shares are equal, and says how they know"
+},
+"M2-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Halves small even numbers with objects"
+},
+"M2-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Notices leftovers, without yet naming them as remainders"
+},
+"M3-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Doubles any number to ten, then to twenty"
+},
+"M3-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Halves even numbers to twenty"
+},
+"M3-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Doubles multiples of ten, e.g. double 30"
+},
+"M3-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Meets ×2 notation alongside the doubling they already do"
+},
+"M3-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Names the move: “I doubled it”"
+},
+"M4-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Counts in twos, fives and tens from zero"
+},
+"M4-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Counts objects arranged in twos and fives"
+},
+"M4-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Notices the pattern in the numbers landed on"
+},
+"M4-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Classifies numbers as odd or even by counting in twos"
+},
+"M5-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Builds an array with real objects, e.g. 3 rows of 4"
+},
+"M5-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Says what the array shows, e.g. three fours"
+},
+"M5-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Sees that 3×4 and 4×3 are the same array turned round"
+},
+"M5-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Meets × notation properly and reads it both ways"
+},
+"M5-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Names the move: “I turned it round to make it easier”"
+},
+"M6-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "SHARING: shares a quantity equally between a number of people"
+},
+"M6-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "GROUPING: works out how many groups of a given size fit, e.g. how many 3s in 12"
+},
+"M6-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Recognises which question a real situation is asking"
+},
+"M6-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Meets ÷ notation for both meanings"
+},
+"M6-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Extends fact families to × and ÷, e.g. from 3×4=12 gives 12÷4=3"
+},
+"M7-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Multiplies by ten using unitising, e.g. 6×10 is six tens"
+},
+"M7-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Derives ×5 as half of ×10, e.g. 6×5 is half of 60"
+},
+"M7-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Divides by ten and by five using the same reasoning"
+},
+"M7-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Names the move: “I did tens, then halved it”"
+},
+"M8-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Divides and notices there is a leftover"
+},
+"M8-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Says what the leftover means in the situation"
+},
+"M8-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Rounds up when the context demands it, e.g. buses, tins, boxes"
+},
+"M8-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 2.1/2.2 spiral",
+"curriculum": "main",
+"text": "Rounds down when the context demands it, e.g. whole items you can afford"
+},
+"TTT-2.3-05": {
+"strand": "Time — Telling the Time",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can be in the right place at the right time, using my toolkit."
+},
+"ANA-2.1-01": {
+"strand": "Time — Analogue Clock",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I know the clock face has numbers and hands that move."
+},
+"ANA-2.1-02": {
+"strand": "Time — Analogue Clock",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can read o’clock on a clock face."
+},
+"ANA-2.2-01": {
+"strand": "Time — Analogue Clock",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can read half past on a clock face."
+},
+"ANA-2.2-02": {
+"strand": "Time — Analogue Clock",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can read quarter past and quarter to."
+},
+"ANA-2.3-01": {
+"strand": "Time — Analogue Clock",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can read five-minute intervals on a clock face."
+},
+"ANA-2.3-02": {
+"strand": "Time — Analogue Clock",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can read any time on a clock face, to the minute."
+},
+"PDM-2.3-07": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 2.3",
+"curriculum": "main",
+"text": "I can recognise and use horizontal and vertical when describing position and movement."
+},
+"CAL-2.1-01A": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can name the days of the week in order."
+},
+"CAL-2.1-01B": {
+"strand": "Time — Calendar Structure",
+"level": "WPS 2.1",
+"curriculum": "main",
+"text": "I can say what day it is today."
+},
+"ANA-2.2-03": {
+"strand": "Time — Analogue Clock",
+"level": "WPS 2.2",
+"curriculum": "main",
+"text": "I can read quarter to on a clock face, and say which hour is coming."
+},
+"FIT-2-P": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can make something symmetrical on purpose, and check that it matches."
+},
+"DUR-2-01": {
+"strand": "Duration — Time as a Measure",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can say which took longer, and which was quicker."
+},
+"DUR-2-02": {
+"strand": "Duration — Time as a Measure",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can measure how long something takes using my own units."
+},
+"DUR-2-03": {
+"strand": "Duration — Time as a Measure",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can guess how long something will take, then check."
+},
+"DUR-2-04": {
+"strand": "Duration — Time as a Measure",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can say and record how long something took, with its unit."
+},
+"DUR-2-05": {
+"strand": "Duration — Time as a Measure",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can time something with a stopwatch, and choose the right timer for the job."
+},
+"FIT-2-09": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can draw or describe what I am going to make before I make it, using shape words that fit."
+},
+"AAP-2-08": {
+"strand": "Shape in Use — Area & Perimeter",
+"level": "WPS 2 (collapsed)",
+"curriculum": "main",
+"text": "I can say how many squares something covers, and use counting squares to compare two coverings."
+},
+"ALG-3-05": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use = to mean that both sides have the same value, and judge whether an equation is true."
+},
+"ALG-3-06": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use commutativity to make calculations easier, and I know which operations it does not work for."
+},
+"ALG-3-07": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use associativity to regroup a calculation and make it easier."
+},
+"ALG-3-08": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use distributivity to split a multiplication into easier parts."
+},
+"ALG-3-01": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can explore and create patterns, and explain the rule in words."
+},
+"ALG-3-03": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use a function machine — putting a number in, applying a rule, and getting a number out."
+},
+"ALG-3-09": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can work a function machine backwards, using inverse operations to find the input."
+},
+"ALG-3-04": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use a letter or a word to stand for a number I do not know yet."
+},
+"ALG-3-10": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can find the unknown in a one-step equation by using the inverse operation."
+},
+"ALG-3-11": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can find the unknown in a two-step equation by undoing the steps in reverse order."
+},
+"ALG-3-12": {
+"strand": "Algebra",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can write algebra the way mathematicians write it."
+},
+"STAT-3-27": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can organise data into a table so that it is clear, complete and easy to work from."
+},
+"STAT-3-28": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can choose how to represent data so it shows what I want it to show, and discuss which representation works best."
+},
+"STAT-3-29": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can have a go at presenting data creatively for a real audience — a poster, an infographic, a slide — choosing what to include and what to leave out."
+},
+"STAT-3-30": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can fill in a two-way table that is already set up, putting each piece of information in the right cell."
+},
+"STAT-3-31": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can collect data straight into a two-way table, keeping track of two things at once while people are answering."
+},
+"STAT-3-32": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can complete the totals of a two-way table and use the grand total to check my work both ways."
+},
+"STAT-3-33": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can choose a two-way table design that will work for our enquiry, from two or three that are offered, and say why the others would not."
+},
+"STAT-3-34": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can set up the rows and columns of a two-way table before we start collecting, checking that every possible answer has exactly one home."
+},
+"STAT-3-35": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can answer questions from a two-way table, including questions that need more than one cell."
+},
+"CN-3-01": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can read a timetable and use it to plan a journey — finding which service to take, when I must leave, and when I will arrive."
+},
+"FIT-3-06": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use symmetry on purpose in something I design, and check that it really matches."
+},
+"FIT-3-07": {
+"strand": "Shape in Use — Fitting & Constructing",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can recognise the same shape when it is turned, flipped or a different size."
+},
+"SHP-3-01": {
+"strand": "Shape in Use — Formal Ladder",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can name and sort 2-D shapes by their properties, including sides, angles and symmetry."
+},
+"SHP-3-02": {
+"strand": "Shape in Use — Formal Ladder",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can describe 3-D shapes by their faces, edges and vertices."
+},
+"SHP-3-03": {
+"strand": "Shape in Use — Formal Ladder",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can relate a 3-D shape to its net, and draw nets for simple solids."
+},
+"SHP-3-04": {
+"strand": "Shape in Use — Formal Ladder",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can find perimeter and area, use them for real jobs, and explain where the formulae come from."
+},
+"PDM-3-06": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use the scale on a map to work out a real distance."
+},
+"PDM-3-07": {
+"strand": "Position, Direction & Movement",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can follow and give directions in a place I do not know, and say what I would do if I got lost."
+},
+"DUR-3-01": {
+"strand": "Duration — Time as a Measure",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can estimate, measure and record how long things take, choosing the right timing device."
+},
+"DUR-3-02": {
+"strand": "Duration — Time as a Measure",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can convert between units of time, including decimal times."
+},
+"PFA-M-01": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "both",
+"text": "I have enough place value understanding to compare two prices and know which is bigger — £68 or £86."
+},
+"PFA-M-02": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "both",
+"text": "I can make sense of the bigger numbers of adult life — rent, a monthly wage, a holiday price — and say which of two is more."
+},
+"PFA-M-03": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can use numbers to find things — the right house, the right page, the right seat — and notice when one is out of place."
+},
+"PFA-M-04": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can add and subtract small numbers in my head — within 20 where I can, and tens numbers like 30 + 40 — using rounding to make real numbers nice first. (Does not include rapid recall, times tables, or anything under time pressure; jottings and the calculator stay legitimate.)"
+},
+"PFA-M-05": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can keep a simple list or tally of things I notice — like the time the post comes each day — with no expectation to sort or present it."
+},
+"PFA-M-06": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can look down my list and say what is typical — \"the post usually comes about ten\" — a general average by eye, not a calculation."
+},
+"PFA-M-07": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "both",
+"text": "I can understand data when the news or the internet uses it — what the number claims, where it came from, and whether the chart makes it look bigger or smaller than it is."
+},
+"PFA-M-08": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I know the house always wins — fruit machines, betting apps, scratch cards and loot boxes are priced so you lose over time; enjoying the arcade is fine, chasing losses is the trap."
+},
+"PFA-M-09": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "both",
+"text": "I am beginning to recognise, copy, extend and generalise the patterns and sequences around me — routines, rotas, rhythms, timetables — and to use them to predict what comes next."
+},
+"PFA-M-10": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can use design thinking for myself — noticing a problem in my own day, trying a fix, and refining it when it does not work."
+},
+"PFA-JI-01": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can join in with shared songs, stories, games and events in ways that work for me — taking part actively, watching, listening or being alongside others — and I can show or communicate which experiences I would choose again."
+},
+"PFA-JI-02": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can join in with games and activities with other people — having a go and enjoying it, without needing to be good at it."
+},
+"PFA-JI-03": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can try making and creating things — stories, songs, comics, videos, art, designs — and notice which ones I enjoy enough to come back to."
+},
+"PFA-JI-04": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can share what I am into in ways that suit me — talking, showing, recommending or creating around what I have watched, read, played or seen — making connections, considering characters' points of view, and hearing views different from mine."
+},
+"PFA-JI-05": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can find out what is happening and available in my local area."
+},
+"PFA-JI-06": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can use technology to connect with people and communities around shared interests — locally and around the world — in ways that are safe and positive for me."
+},
+"PFA-JI-07": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can explore different ways of spending my free time and communicate what I like, dislike, want to try again or want to leave behind — sometimes trying something in a different form or more than once when I am willing."
+},
+"PFA-JI-08": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can use reminders of things I have enjoyed or been interested in — photos, notes, symbols, tickets, objects, lists or videos — to help me remember my options and choose what I might like to do again."
+},
+"PFA-JI-09": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can make choices about how to use some of my free time — including rest, familiar interests and new possibilities — and use the prompts, routines, tools or support that help me get started."
+},
+"PFA-MM-01": {
+"strand": "PFA · Managing Money",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can use the value and equivalence of coins and notes — knowing the same amount can be made in different ways — to make real transactions, cash or contactless, and check what comes back."
+},
+"PFA-MM-02": {
+"strand": "PFA · Managing Money",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can understand money coming in and going out, and use tools that work for me to keep track, plan ahead and manage my money responsibly."
+},
+"PFA-MM-04": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can tell the difference between what I want, what I need, and what I have a right to."
+},
+"PFA-MM-05": {
+"strand": "PFA · Managing Money",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can protect my money and personal information from scams — spotting phishing messages, fake websites, and adverts and marketing tricks designed to hook me — and I know the strategies that guard against them."
+},
+"PFA-MM-06": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can join in with games and online life without spending money I do not want to — and I know that belonging does not depend on buying what everyone else buys."
+},
+"PFA-MM-07": {
+"strand": "PFA · Managing Money",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can use percentages in the money situations of real shopping — 50% off, 25% extra free, comparing discounts — and check that a deal is what it claims to be."
+},
+"PFA-MM-08": {
+"strand": "PFA · Managing Money",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can read a payslip."
+},
+"PFA-MH-01": {
+"strand": "PFA · Managing a Home",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can follow instructions in the right order to get a real job done — a recipe, a flat-pack, a wash cycle — checking each step as I go."
+},
+"PFA-MH-02": {
+"strand": "PFA · Managing a Home",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can plan and prepare basic, nutritious meals — understanding what a balanced diet is, and making informed choices about the food I eat to support my health and wellbeing."
+},
+"PFA-MH-03": {
+"strand": "PFA · Managing a Home",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can safely use tools, materials and equipment to make, build and fix things — in the kitchen, in DIY, and in creative work."
+},
+"PFA-MH-04": {
+"strand": "PFA · Managing a Home",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can spot things around the home that could be harmful — chemicals, electrics, gas, medicines — and act to reduce the risk, knowing how materials behave and change, and what must never be mixed."
+},
+"PFA-MH-05": {
+"strand": "PFA · Managing a Home",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can run a home with as little waste as possible — saving energy, food and money — because I understand the impact of what I do and use on my environment, on living things, and on a sustainable future."
+},
+"PFA-MH-06": {
+"strand": "PFA · Managing a Home",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can keep the place where I live clean, hygienic and usable — noticing what needs doing, using suitable equipment and products safely, and keeping on top of regular jobs."
+},
+"PFA-MS-01": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can notice how I am feeling and communicate it — knowing when I need help to manage my feelings, understanding that talking about them is one of the ways we stay mentally well, and helping make it normal for other people to talk too."
+},
+"PFA-MS-02": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can steady myself using strategies I have developed for myself — including creative outlets when words are hard — because I understand how my body and my emotions are connected and can recognise my own signs of anxiety."
+},
+"PFA-MS-03": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can ask for help from people I trust — I know who is in my circle (family, friend, professional, online), which people and services can help with my mental health and wellbeing, and how to judge when help is needed."
+},
+"PFA-MS-04": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can look after my body and my everyday health — understanding what helps and what harms, noticing when something changes, and getting things checked when they need it."
+},
+"PFA-MS-06": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I know who I am and where I belong — my people, my places, my languages, my story — and I understand that my values and identity are shaped by the groups around me, that society is made up of many different lives and beliefs, and that the wish to fit in can influence what I do."
+},
+"PFA-MS-07": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can weigh up a decision before I make it — judging how much thought it actually needs, gathering what I need to know, deciding, and then moving on."
+},
+"PFA-MS-08": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can handle change — using what I have learned from past experiences to prepare myself, and anticipating how future events may make me and others feel."
+},
+"PFA-MS-09": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can manage my screen life — understanding why apps and games are designed to keep me there, balancing them with the rest of my life, thinking honestly about why I present myself the way I do online, and evaluating edited, filtered or AI-made images by asking what they are for and what they are trying to do."
+},
+"PFA-MS-10": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can make friendships and keep them — paying attention to how other people feel and why, listening to points of view different from mine, behaving in ways that help the group, and sorting out conflict instead of losing people."
+},
+"PFA-MS-11": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I know the different kinds of relationship in my life — family, friend, professional, stranger, online — I understand what is okay in each, and I can change how I behave depending on where I am and who I am with."
+},
+"PFA-MS-12": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can recognise what a safe relationship feels like and communicate when I do not feel safe — and if my safety or someone else's is threatened, I can respond, remove myself, and draw on my support systems."
+},
+"PFA-MS-13": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can keep myself and others emotionally safe online — recognising bullying and unacceptable behaviour in all its forms, using block and report tools on my own apps, behaving well myself, and challenging harm when the group chat turns nasty."
+},
+"PFA-MS-14": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I understand the risks and the legal consequences of sending intimate images — and I know that asking for help about it is always safe."
+},
+"PFA-MS-15": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can help in an emergency — using basic first aid, keeping myself and others safe, and calling 999 when it is needed."
+},
+"PFA-MS-16": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can manage my time and commitments using tools that work for me — calendars, reminders, lists, alarms or routines — so I can remember appointments and plans, prepare for what is coming, and balance responsibilities with rest and things I enjoy."
+},
+"PFA-PS-01": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can understand what people tell me — following multi-step instructions and answering questions about what I have heard — and I make sure I understand: saying when I do not, asking again, and asking my own questions to exchange information and ideas."
+},
+"PFA-PS-03": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can find and use the information in the words that run the world — letters, forms, signs, labels and menus — reading between the lines to work out what a document is really telling me to do."
+},
+"PFA-PS-04": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can tell people clearly what happened or what I know — retelling events in order, with the right words for it — at work, at the doctor's, or to a friend."
+},
+"PFA-PS-05": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can communicate with different people in the way that suits them and the situation — recognising who I am talking to, showing empathy and respect, and choosing how, when and where to say what I need to say."
+},
+"PFA-PS-06": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can choose the right way to get in touch — a call, a message, an email or face to face — compose clear, appropriate messages with attachments when needed, and make a phone call to someone I do not know."
+},
+"PFA-PS-07": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can have my say and make it count, starting with my own meetings and reviews — forming opinions from evidence, putting my case clearly, and exercising my rights while respecting other people's — because I know what my rights are at work, in shops, online, and as a person with additional needs."
+},
+"PFA-PS-08": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I know how my community is run — what the council does, who represents me, how voting works, and how to report a problem or get something changed."
+},
+"PFA-PS-09": {
+"strand": "PFA · Joining In & Belonging",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can contribute to my community — helping, volunteering and taking an active part in things that make my place better, including planning and carrying out something real, on my own or with others."
+},
+"PFA-PS-10": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can question what I see, hear and read before I believe it or pass it on."
+},
+"PFA-PS-11": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can use technology safely and responsibly — protecting my information and my accounts, thinking before I share, and knowing what to do when something goes wrong."
+},
+"PFA-PS-12": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can keep my own things organised and findable — saving, naming and backing up files, photos and documents so I do not lose them — and I can create real things people need, like a CV, a poster or a form, suited to the audience they are for."
+},
+"PFA-PS-13": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can get ready for working life — understanding what being part of a workplace involves, what I have to offer, and what I want to work towards."
+},
+"PFA-MS-17": {
+"strand": "PFA · Managing Myself",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can understand what affects how I feel — noticing what lifts my mood and what pulls it down, and using that to look after my mental health."
+},
+"PFA-PS-14": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can use technology to make everyday life easier and more manageable — choosing a tool that suits the job and letting it do the work it is good at."
+},
+"PFA-PS-15": {
+"strand": "PFA · Participating in Society",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can make sense of tables, charts and graphs that are being used to tell me something — and notice when they are being used to mislead me."
+},
+"PFA-M-11": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I can find fractions and percentages of real amounts — discounts, portions, measures — using a calculator accurately, and check the answer looks right."
+},
+"PFA-M-12": {
+"strand": "PFA Maths",
+"level": "PFA",
+"curriculum": "pfa",
+"text": "I know what data cannot tell me — a few numbers that suggest something do not prove it, and do not justify a big conclusion about people."
+},
+"NCP-3-01": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can say numbers aloud from their figures, write them down from hearing them, and partition, order and compare them — up to a million and beyond."
+},
+"NCP-3-02": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can interpret the large numbers I meet in real life, and round them to talk about them sensibly."
+},
+"NCP-3-03": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can use negative numbers in real situations, and count and calculate through zero."
+},
+"NCP-3-04": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can recall the multiplication tables to 10 × 10 and use what I know to work out what I do not."
+},
+"NCP-3-05": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can add and subtract confidently with big numbers and decimals, using written methods when I need them."
+},
+"NCP-3-06": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can multiply and divide confidently, including with remainders, and I know what the remainder means."
+},
+"NCP-3-07": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can work out the order to do a calculation in, including when there are brackets."
+},
+"NCP-3-08": {
+"strand": "Number, Calculation & Pattern",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can explore the properties of numbers — factors, multiples, primes and squares."
+}
+}
+}

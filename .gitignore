@@ -2,3 +2,8 @@ out/*
 !out/.gitkeep
 site/
 __pycache__/
+explorer/private/*
+!explorer/private/README.md
+explorer/tokens.css
+node_modules/
+.DS_Store

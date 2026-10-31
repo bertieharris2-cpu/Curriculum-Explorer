@@ -1,0 +1,749 @@
+{
+ "name": "Bettws Curriculum Explorer",
+ "version": 1,
+ "color": {
+  "themes": [
+   {
+    "id": "light",
+    "name": "Light"
+   },
+   {
+    "id": "dark",
+    "name": "Dark"
+   }
+  ],
+  "tokens": [
+   {
+    "name": "school-green",
+    "value": "#8aa28c",
+    "usage": "Sampled from the logo's ring and tower. Brand fills: the logo, the outer line of the A4 page border, pupil tile 1, decorative blocks. Not a text colour (2.6:1 on surface); text on it is `on-fill`."
+   },
+   {
+    "name": "school-gold",
+    "value": "#ddaf51",
+    "usage": "Sampled from the logo's two figures. The inner line of the A4 page border, pupil tile 2, thin highlights. Never text on light grounds (1.9:1); `on-fill` reads on it at 8.6:1."
+   },
+   {
+    "name": "green-deep",
+    "value": {
+     "light": "#33503c",
+     "dark": "#2d4637"
+    },
+    "usage": "The school's structural green, darkened from `school-green` so text can sit on it. App bar, navigation rail, section headers. Text on it: `on-green-deep`."
+   },
+   {
+    "name": "on-green-deep",
+    "value": {
+     "light": "#ffffff",
+     "dark": "#edf1ea"
+    },
+    "usage": "Text and icons on `green-deep` (8.9:1 light, 9.6:1 dark)."
+   },
+   {
+    "name": "green-text",
+    "value": {
+     "light": "#3a5a43",
+     "dark": "#a9c3ab"
+    },
+    "usage": "Green used as text or a 2px mark: selected tab label, links, the selected outline of a map cell. 7.2:1 on `surface` (light), 9.5:1 (dark)."
+   },
+   {
+    "name": "green-tint",
+    "value": {
+     "light": "#e3ebe2",
+     "dark": "#223026"
+    },
+    "usage": "Quiet green ground: selected rows, selected filter chips, the Home path tiles. `ink` and `green-text` read on it."
+   },
+   {
+    "name": "gold-tint",
+    "value": {
+     "light": "#f7eccf",
+     "dark": "#3a3118"
+    },
+    "usage": "Quiet gold ground for a single 'new since last version' highlight. `ink` reads on it."
+   },
+   {
+    "name": "logo-plate",
+    "value": "#ffffff",
+    "usage": "The white square the logo sits on in dark mode (the logo file has a white background). Same in both themes."
+   },
+   {
+    "name": "orange-ember",
+    "value": "#e5561c",
+    "usage": "Fire-orange option A: the reddest, closest to embers. `on-accent` reads on it at 4.8:1; 3.5:1 as a mark on `surface`."
+   },
+   {
+    "name": "orange-ember-pressed",
+    "value": "#de5018",
+    "usage": "Option A pressed fill. `on-accent` still 4.5:1+."
+   },
+   {
+    "name": "orange-flame",
+    "value": "#e8600e",
+    "usage": "Fire-orange option B (recommended): a true flame orange. `on-accent` reads on it at 5.2:1; 3.2:1 as a mark on `surface`, 5.1:1 on dark `surface`."
+   },
+   {
+    "name": "orange-flame-pressed",
+    "value": "#dc5a0c",
+    "usage": "Option B pressed fill. `on-accent` 4.7:1."
+   },
+   {
+    "name": "orange-blaze",
+    "value": "#db720c",
+    "usage": "Fire-orange option C: amber, toward the logo's gold. `on-accent` 5.5:1; 3.1:1 as a mark on `surface`."
+   },
+   {
+    "name": "orange-blaze-pressed",
+    "value": "#d06a0a",
+    "usage": "Option C pressed fill. `on-accent` 4.9:1."
+   },
+   {
+    "name": "accent",
+    "value": "{orange-flame}",
+    "usage": "THE orange in use. Points at the chosen option; change this one alias (and `accent-pressed`) to switch to Ember or Blaze. Capture button fill, the 4px active-tab bar, the current-step marker, small highlights. Never text, never a large background."
+   },
+   {
+    "name": "accent-pressed",
+    "value": "{orange-flame-pressed}",
+    "usage": "Pressed fill of the capture button. Follows `accent`."
+   },
+   {
+    "name": "on-accent",
+    "value": "#121814",
+    "usage": "Text and icons on `accent` and `accent-pressed`, both themes. Never white on orange (white fails at 3.4:1)."
+   },
+   {
+    "name": "on-fill",
+    "value": "#121814",
+    "usage": "Dark text on fixed mid-tone fills that stay the same in both themes: pupil tiles, `school-green`, `school-gold`."
+   },
+   {
+    "name": "accent-tint",
+    "value": {
+     "light": "#fce6d8",
+     "dark": "#3b2416"
+    },
+    "usage": "A soft orange wash behind a just-saved confirmation or a single highlighted search hit. `ink` reads on it (14.4:1 / 12.7:1)."
+   },
+   {
+    "name": "surface",
+    "value": {
+     "light": "#f7f8f4",
+     "dark": "#121813"
+    },
+    "usage": "Page background behind everything."
+   },
+   {
+    "name": "surface-raised",
+    "value": {
+     "light": "#ffffff",
+     "dark": "#1a221c"
+    },
+    "usage": "Cards, sheets, the statement card, inputs."
+   },
+   {
+    "name": "surface-sunken",
+    "value": {
+     "light": "#ecefe8",
+     "dark": "#0d120e"
+    },
+    "usage": "Wells: the expanded steps area, search field background, disabled control fill, the offline banner."
+   },
+   {
+    "name": "line",
+    "value": {
+     "light": "#d3dad0",
+     "dark": "#2e3a31"
+    },
+    "usage": "Hairline dividers between list rows and around cards. Decorative only: never the only edge of a control."
+   },
+   {
+    "name": "line-strong",
+    "value": {
+     "light": "#75857a",
+     "dark": "#7f9184"
+    },
+    "usage": "Edges of controls: inputs, segmented controls, unselected chips (3.6:1+ on every surface, both themes)."
+   },
+   {
+    "name": "ink",
+    "value": {
+     "light": "#141c17",
+     "dark": "#edf1ea"
+    },
+    "usage": "Body text, statement text, headings, on `surface`, `surface-raised`, `surface-sunken` and every tint (14:1+)."
+   },
+   {
+    "name": "ink-muted",
+    "value": {
+     "light": "#4a574e",
+     "dark": "#a8b5ab"
+    },
+    "usage": "Secondary text: 'Why this matters' label, dates, counts, captions. 6.5:1+ on every surface in both themes."
+   },
+   {
+    "name": "ink-disabled",
+    "value": {
+     "light": "#8a948c",
+     "dark": "#5e6a61"
+    },
+    "usage": "Disabled labels only (exempt from contrast; always paired with a disabled cursor/state)."
+   },
+   {
+    "name": "focus-ring",
+    "value": {
+     "light": "#141c17",
+     "dark": "#ebc56a"
+    },
+    "usage": "3px keyboard focus outline with 2px offset, on every surface (16:1 light; gold 9.9:1+ dark)."
+   },
+   {
+    "name": "focus-ring-on-dark",
+    "value": "#ebc56a",
+    "usage": "Focus outline on `green-deep` and `pfa-deep` bars (gold, 4.4:1 on the light-theme bar)."
+   },
+   {
+    "name": "scrim",
+    "value": {
+     "light": "rgba(20,28,23,0.48)",
+     "dark": "rgba(0,0,0,0.6)"
+    },
+    "usage": "Behind a sheet or dialog."
+   },
+   {
+    "name": "ladder",
+    "value": {
+     "light": "#1d6b66",
+     "dark": "#6fc7bf"
+    },
+    "usage": "Teal: a LADDER strand (taught in a set order). Badge text, the ladder icon, the 4px strand rule on map rows. 6.3:1 on `surface-raised`."
+   },
+   {
+    "name": "ladder-tint",
+    "value": {
+     "light": "#dcefec",
+     "dark": "#14302d"
+    },
+    "usage": "Teal ground of the ladder badge. `ladder` and `ink` read on it."
+   },
+   {
+    "name": "exposure",
+    "value": {
+     "light": "#7a5a1e",
+     "dark": "#d8bc84"
+    },
+    "usage": "Sand: a REPEATED-EXPOSURE strand (met again and again). Darkened from sand so it reads as text (6.4:1)."
+   },
+   {
+    "name": "exposure-tint",
+    "value": {
+     "light": "#f2e7cf",
+     "dark": "#33291a"
+    },
+    "usage": "Sand ground of the exposure badge. `exposure` and `ink` read on it."
+   },
+   {
+    "name": "pfa",
+    "value": {
+     "light": "#7e3861",
+     "dark": "#d9a0c4"
+    },
+    "usage": "Plum: the PFA section only (Preparation for Adulthood). PFA headings, the PFA mode marker. Never appears in the main curriculum view."
+   },
+   {
+    "name": "pfa-tint",
+    "value": {
+     "light": "#f2e3eb",
+     "dark": "#331f2a"
+    },
+    "usage": "Plum ground for PFA cards and the selected PFA segment. `pfa` and `ink` read on it."
+   },
+   {
+    "name": "pfa-deep",
+    "value": {
+     "light": "#6a2e52",
+     "dark": "#4f2a43"
+    },
+    "usage": "The app bar in PFA mode, replacing `green-deep`, so the mode change is unmistakable. Text: `on-pfa-deep`."
+   },
+   {
+    "name": "on-pfa-deep",
+    "value": {
+     "light": "#ffffff",
+     "dark": "#edf1ea"
+    },
+    "usage": "Text and icons on `pfa-deep` (9.9:1 / 11.1:1)."
+   },
+   {
+    "name": "note",
+    "value": {
+     "light": "#5f6661",
+     "dark": "#a4aca6"
+    },
+    "usage": "Soft grey: small notes and gaps. Note text, the 'gap' label in a map cell. 5.9:1 on `surface-raised`."
+   },
+   {
+    "name": "note-tint",
+    "value": {
+     "light": "#ecedea",
+     "dark": "#232824"
+    },
+    "usage": "Soft grey ground for an empty map cell (a gap) and inline notes."
+   },
+   {
+    "name": "eds-emerging",
+    "value": {
+     "light": "#e0eaf4",
+     "dark": "#1d2b3a"
+    },
+    "usage": "Assessment step 1, Emerging: the lightest of one slate-blue hue. Selected fill of the E segment. Text: `ink`. Always with the word and the one-bar glyph."
+   },
+   {
+    "name": "eds-developing",
+    "value": {
+     "light": "#9dbbda",
+     "dark": "#36597e"
+    },
+    "usage": "Assessment step 2, Developing: the middle step. Text: `ink` (8.7:1 light; 6.4:1 dark). Two-bar glyph."
+   },
+   {
+    "name": "eds-secure",
+    "value": {
+     "light": "#2c5a87",
+     "dark": "#a9c9ea"
+    },
+    "usage": "Assessment step 3, Secure: the strongest step. Text: `on-eds-secure`. Three-bar glyph. Not green, not traffic lights: Emerging is not a failure."
+   },
+   {
+    "name": "on-eds-secure",
+    "value": {
+     "light": "#ffffff",
+     "dark": "#0f1a24"
+    },
+    "usage": "Text on `eds-secure` (7.2:1 / 10.3:1)."
+   },
+   {
+    "name": "pupil-1",
+    "value": "#8aa28c",
+    "usage": "Pupil tile 1 (school green). Pupil chips take tiles 1–6 in turn from the pseudonym. Text: `on-fill` (6.3:1+), same in both themes. Never orange."
+   },
+   {
+    "name": "pupil-2",
+    "value": "#ddaf51",
+    "usage": "Pupil tile 2 (school gold). Pupil chips take tiles 1–6 in turn from the pseudonym. Text: `on-fill` (6.3:1+), same in both themes. Never orange."
+   },
+   {
+    "name": "pupil-3",
+    "value": "#8fc3bd",
+    "usage": "Pupil tile 3 (light teal). Pupil chips take tiles 1–6 in turn from the pseudonym. Text: `on-fill` (6.3:1+), same in both themes. Never orange."
+   },
+   {
+    "name": "pupil-4",
+    "value": "#d8a7c4",
+    "usage": "Pupil tile 4 (light plum). Pupil chips take tiles 1–6 in turn from the pseudonym. Text: `on-fill` (6.3:1+), same in both themes. Never orange."
+   },
+   {
+    "name": "pupil-5",
+    "value": "#a9c2de",
+    "usage": "Pupil tile 5 (light slate). Pupil chips take tiles 1–6 in turn from the pseudonym. Text: `on-fill` (6.3:1+), same in both themes. Never orange."
+   },
+   {
+    "name": "pupil-6",
+    "value": "#d9c29a",
+    "usage": "Pupil tile 6 (light sand). Pupil chips take tiles 1–6 in turn from the pseudonym. Text: `on-fill` (6.3:1+), same in both themes. Never orange."
+   },
+   {
+    "name": "print-frame-outer",
+    "value": "{school-green}",
+    "usage": "Outer line of the A4 page border (double frame). Print only; same in both themes."
+   },
+   {
+    "name": "print-frame-inner",
+    "value": "{school-gold}",
+    "usage": "Inner line of the A4 page border. Print only."
+   },
+   {
+    "name": "print-ink",
+    "value": "#141c17",
+    "usage": "All text on printed A4 pages (print is always light)."
+   },
+   {
+    "name": "print-rule",
+    "value": "#c9d0c6",
+    "usage": "Hairlines between rows on printed pages and the photo edge. Print only."
+   },
+   {
+    "name": "print-paper",
+    "value": "#ffffff",
+    "usage": "Printed page ground."
+   }
+  ]
+ },
+ "type": {
+  "fonts": [
+   {
+    "family": "Atkinson Hyperlegible Next",
+    "file": "fonts/AtkinsonHyperlegibleNext-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Atkinson Hyperlegible Next",
+    "file": "fonts/AtkinsonHyperlegibleNext-Italic.woff2",
+    "weight": "400",
+    "style": "italic"
+   },
+   {
+    "family": "Atkinson Hyperlegible Next",
+    "file": "fonts/AtkinsonHyperlegibleNext-SemiBold.woff2",
+    "weight": "600",
+    "style": "normal"
+   },
+   {
+    "family": "Atkinson Hyperlegible Next",
+    "file": "fonts/AtkinsonHyperlegibleNext-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   },
+   {
+    "family": "Atkinson Hyperlegible Mono",
+    "file": "fonts/AtkinsonHyperlegibleMono-Variable.woff2",
+    "weight": "200 800",
+    "style": "normal"
+   }
+  ],
+  "families": {
+   "sans": "\"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif",
+   "mono": "\"Atkinson Hyperlegible Mono\", ui-monospace, \"Cascadia Mono\", monospace"
+  },
+  "groups": [
+   {
+    "name": "Display",
+    "family": "sans",
+    "styles": [
+     {
+      "name": "display",
+      "fontSize": "40px",
+      "lineHeight": "48px",
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em",
+      "sample": "Browse the curriculum",
+      "usage": "The two Home paths and the evidence record's title. One per screen at most."
+     },
+     {
+      "name": "title-1",
+      "fontSize": "30px",
+      "lineHeight": "38px",
+      "fontWeight": 700,
+      "sample": "Number · Progression step 3",
+      "usage": "Screen titles."
+     },
+     {
+      "name": "title-2",
+      "fontSize": "24px",
+      "lineHeight": "32px",
+      "fontWeight": 700,
+      "sample": "Phase 4 · Unitising",
+      "usage": "Section and phase headings inside a screen."
+     },
+     {
+      "name": "title-3",
+      "fontSize": "20px",
+      "lineHeight": "28px",
+      "fontWeight": 700,
+      "sample": "Small steps",
+      "usage": "Card titles, enquiry titles, sheet headings."
+     }
+    ]
+   },
+   {
+    "name": "Text",
+    "family": "sans",
+    "styles": [
+     {
+      "name": "statement",
+      "fontSize": "19px",
+      "lineHeight": "29px",
+      "fontWeight": 600,
+      "sample": "I can count a set of objects by grouping them in twos, fives and tens.",
+      "usage": "The 'I can…' statement: the main text of a statement card. Never reworded, never truncated."
+     },
+     {
+      "name": "body",
+      "fontSize": "17px",
+      "lineHeight": "27px",
+      "fontWeight": 400,
+      "sample": "Why this matters: grouping is the first step to multiplying, and it makes big counts faster and safer.",
+      "usage": "Default reading text, 'Why this matters', steps and probing questions."
+     },
+     {
+      "name": "body-sm",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": 400,
+      "sample": "Two pupils · last record 3 days ago",
+      "usage": "The smallest reading size on iPad: secondary lines, list metadata."
+     },
+     {
+      "name": "label",
+      "fontSize": "17px",
+      "lineHeight": "22px",
+      "fontWeight": 600,
+      "sample": "Take a photo",
+      "usage": "Buttons, tabs, segmented controls, chips."
+     },
+     {
+      "name": "label-sm",
+      "fontSize": "15px",
+      "lineHeight": "20px",
+      "fontWeight": 700,
+      "sample": "Why this matters",
+      "usage": "Small labels above content (no uppercase: harder to read for dyslexic readers)."
+     },
+     {
+      "name": "caption",
+      "fontSize": "15px",
+      "lineHeight": "20px",
+      "fontWeight": 400,
+      "sample": "31 October 2026",
+      "usage": "Dates and counts beside a larger element; never for a sentence."
+     },
+     {
+      "name": "code",
+      "family": "mono",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": 500,
+      "sample": "NCP-2.2-05",
+      "usage": "The bettws_id, small at the end of a statement line. Never a heading or a name."
+     }
+    ]
+   },
+   {
+    "name": "Print",
+    "family": "sans",
+    "styles": [
+     {
+      "name": "print-title",
+      "fontSize": "22px",
+      "lineHeight": "28px",
+      "fontWeight": 700,
+      "sample": "Practical maths record",
+      "usage": "Title of an A4 page (about 16.5pt)."
+     },
+     {
+      "name": "print-statement",
+      "fontSize": "15px",
+      "lineHeight": "21px",
+      "fontWeight": 600,
+      "sample": "I can share a set equally between two people.",
+      "usage": "Ticked statements on the A4 record (about 11pt)."
+     },
+     {
+      "name": "print-body",
+      "fontSize": "15px",
+      "lineHeight": "21px",
+      "fontWeight": 400,
+      "sample": "Note: used a muffin tin to share 12 conkers.",
+      "usage": "Notes and labels on A4 pages (about 11pt)."
+     },
+     {
+      "name": "print-code",
+      "family": "mono",
+      "fontSize": "12px",
+      "lineHeight": "16px",
+      "fontWeight": 500,
+      "sample": "FDP-2.3-04",
+      "usage": "Codes at the end of a printed statement line (about 9pt)."
+     }
+    ]
+   }
+  ]
+ },
+ "spacing": {
+  "tokens": [
+   {
+    "name": "space-1",
+    "value": "4px",
+    "usage": "Gap between an icon and its label; inside a code tag."
+   },
+   {
+    "name": "space-2",
+    "value": "8px",
+    "usage": "Gap between chips; logo plate padding."
+   },
+   {
+    "name": "space-3",
+    "value": "12px",
+    "usage": "Gap between a statement and its code line; inside a list row."
+   },
+   {
+    "name": "space-4",
+    "value": "16px",
+    "usage": "Card padding on iPad portrait; the side gutter on narrow screens."
+   },
+   {
+    "name": "space-5",
+    "value": "24px",
+    "usage": "Card padding on landscape and desktop; gap between cards."
+   },
+   {
+    "name": "space-6",
+    "value": "32px",
+    "usage": "Between sections of a screen."
+   },
+   {
+    "name": "space-7",
+    "value": "48px",
+    "usage": "Above a phase heading (it starts a new group)."
+   },
+   {
+    "name": "space-8",
+    "value": "64px",
+    "usage": "Top of Home; around empty states."
+   }
+  ]
+ },
+ "radius": {
+  "note": "Square corners everywhere. There is one radius and it is 0.",
+  "tokens": [
+   {
+    "name": "radius",
+    "value": "0",
+    "usage": "Every corner in the system: cards, buttons, chips, inputs, images, panels, pupil tiles, the A4 border. Set explicitly; never leave to browser defaults (iOS Safari rounds inputs and buttons unless told not to)."
+   }
+  ]
+ },
+ "shadow": {
+  "note": "Elevation is quiet: hairline borders do most of the work.",
+  "tokens": [
+   {
+    "name": "elevation-0",
+    "value": "none",
+    "usage": "Flat: list rows, map cells, anything inside a card."
+   },
+   {
+    "name": "elevation-1",
+    "value": {
+     "light": "0 1px 2px rgba(20,28,23,0.10), 0 2px 6px rgba(20,28,23,0.06)",
+     "dark": "0 1px 2px rgba(0,0,0,0.50)"
+    },
+    "usage": "Cards resting on `surface` (statement, evidence, enquiry cards)."
+   },
+   {
+    "name": "elevation-2",
+    "value": {
+     "light": "0 4px 10px rgba(20,28,23,0.12), 0 12px 28px rgba(20,28,23,0.10)",
+     "dark": "0 6px 20px rgba(0,0,0,0.60)"
+    },
+    "usage": "The capture sheet, dialogs, the sticky capture button over scrolling content."
+   }
+  ]
+ },
+ "size": {
+  "note": "Hands are busy: nothing tappable is smaller than size-touch.",
+  "tokens": [
+   {
+    "name": "size-touch",
+    "value": "48px",
+    "usage": "Minimum height and width of anything tappable: chips, tabs, segments, list rows, icon buttons."
+   },
+   {
+    "name": "size-touch-lg",
+    "value": "56px",
+    "usage": "Buttons, search field, the Main/PFA switch, E/D/S segments."
+   },
+   {
+    "name": "size-hero",
+    "value": "72px",
+    "usage": "The capture button's height."
+   },
+   {
+    "name": "size-icon",
+    "value": "24px",
+    "usage": "Icons in buttons and rows."
+   },
+   {
+    "name": "size-pupil",
+    "value": "48px",
+    "usage": "Pupil tile (square) beside a name; 32px variant inside evidence cards uses size-pupil-sm."
+   },
+   {
+    "name": "size-pupil-sm",
+    "value": "32px",
+    "usage": "Pupil tile inside evidence cards and records."
+   },
+   {
+    "name": "content-max",
+    "value": "1080px",
+    "usage": "Maximum content width on desktop; wider screens centre it."
+   }
+  ]
+ },
+ "border": {
+  "note": "Widths for lines and marks; colours come from `line`, `line-strong`, `accent`.",
+  "tokens": [
+   {
+    "name": "border-hair",
+    "value": "1px",
+    "usage": "Card edges and row dividers (`line`)."
+   },
+   {
+    "name": "border-control",
+    "value": "2px",
+    "usage": "Edges of inputs, chips, segments (`line-strong`); selected outlines (`green-text`)."
+   },
+   {
+    "name": "border-active",
+    "value": "4px",
+    "usage": "The orange bar under the active tab and beside the current capture step (`accent`)."
+   },
+   {
+    "name": "border-strand",
+    "value": "6px",
+    "usage": "The teal or sand rule at the start of a strand row in the curriculum map."
+   },
+   {
+    "name": "focus-width",
+    "value": "3px",
+    "usage": "Focus outline width (`focus-ring`)."
+   },
+   {
+    "name": "focus-offset",
+    "value": "2px",
+    "usage": "Gap between a control and its focus outline."
+   }
+  ]
+ },
+ "print": {
+  "note": "Every printed A4 page carries the same double frame: an outer school-green line, a gap, an inner school-gold line, square corners.",
+  "tokens": [
+   {
+    "name": "print-page-margin",
+    "value": "10mm",
+    "usage": "Paper edge to the outer frame line (inside printers' unprintable margin)."
+   },
+   {
+    "name": "print-frame-outer-width",
+    "value": "4pt",
+    "usage": "Outer line of the page frame, in `print-frame-outer` (school green)."
+   },
+   {
+    "name": "print-frame-gap",
+    "value": "2pt",
+    "usage": "White gap between the two frame lines."
+   },
+   {
+    "name": "print-frame-inner-width",
+    "value": "2.5pt",
+    "usage": "Inner line of the page frame, in `print-frame-inner` (school gold)."
+   },
+   {
+    "name": "print-frame-padding",
+    "value": "8mm",
+    "usage": "Inner frame line to the page content."
+   }
+  ]
+ }
+}

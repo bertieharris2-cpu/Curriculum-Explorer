@@ -1,12 +1,15 @@
-# Rebuilds both hubs and publishes them to GitHub Pages whenever the dataset,
-# template or build scripts change on main. Can also be run by hand from the Actions tab.
-name: Build and publish hubs
+# Validates the dataset, rebuilds the Explorer and both hubs, and publishes them to GitHub
+# Pages whenever the dataset, templates or build scripts change on main. If a check fails the
+# job stops and the previous site stays live. Can also be run by hand from the Actions tab.
+name: Build and publish
 
 on:
   push:
     branches: [main]
     paths:
       - 'dataset/**'
+      - 'explorer/**'
+      - 'validate.py'
       - 'extract.py'
       - 'build.py'
       - 'hub_template.html'
@@ -16,6 +19,8 @@ on:
   pull_request:
     paths:
       - 'dataset/**'
+      - 'explorer/**'
+      - 'validate.py'
       - 'extract.py'
       - 'build.py'
       - 'hub_template.html'
@@ -43,6 +48,8 @@ jobs:
           python-version: '3.12'
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Validate the dataset (stops here if a check fails)
+        run: python3 validate.py
       - run: python3 extract.py
       - run: python3 build.py --site
       - uses: actions/upload-pages-artifact@v3

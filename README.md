@@ -3,25 +3,30 @@
 This repository turns the Bettws Master Dataset (an Excel workbook of maths and Preparing for
 Adulthood learning statements) into three self-contained web pages:
 
-- **Bettws Curriculum Explorer** — the staff version. Browse the maths curriculum by strand and
-  progression step, open a statement's small steps and probing questions, switch to the PFA
-  section, read the mapped enquiries, print tidy A4 lists, and make learning intention cards.
-  It adds to an iPad home screen and works offline once opened. It carries only what a teacher
-  needs on a Tuesday: none of the dataset's working columns, views or filters.
+- **Bettws Curriculum Explorer** — the staff version. A green side menu of strands in six
+  families, progression levels side by side on a rail you slide across, statements as plain
+  rows that open into bulleted small steps and questions, a search that reads the small steps
+  too, the PFA section as its own mode, the mapped enquiries, A4 printing with the school's
+  green-and-gold frame, and learning intention cards. Three text sizes, light and dark, full
+  screen. It adds to an iPad home screen and works offline once opened. It carries only what a
+  teacher needs on a Tuesday: none of the dataset's working columns, views or filters.
+- **Bertie's version** of the Explorer — the same, plus "How strands are taught" (the ladder,
+  family and spine views from the design prototype) and Review mode, which keeps notes on any
+  page in the artifact's shared log so Claude can read them back.
 - **Bettws Maths Curriculum Hub** and **Bettws PFA Curriculum Hub** — Bertie's working views,
   with all the extra data (notes, rulings, the gap register, the structure grid, the WPS 3
   teaching order). They are the record of the earlier views and filters and keep building as
   they always have.
 
-Nothing reads the spreadsheet live: each build bakes the dataset in. No login, no server, no
-database, no analytics, no tracking of any kind.
+Nothing reads the spreadsheet live: each build bakes the dataset in. The staff version has no
+login, no server, no database, no analytics and no tracking of any kind.
 
 ## Where the pages are
 
 | Page | GitHub Pages (no account needed) | claude.ai copy |
 | --- | --- | --- |
 | Curriculum Explorer (staff) | https://bertieharris2-cpu.github.io/Curriculum-Explorer/explorer/ | https://claude.ai/artifact/Y32QAUiZvCjnSHR4Nn14Jf |
-| Curriculum Explorer (Bertie's version) | https://bertieharris2-cpu.github.io/Curriculum-Explorer/explorer-bertie/ | |
+| Curriculum Explorer (Bertie's version) | https://bertieharris2-cpu.github.io/Curriculum-Explorer/explorer-bertie/ | https://claude.ai/artifact/EwortvdBmz4MYYCVGdoBTm |
 | Maths Curriculum Hub | https://bertieharris2-cpu.github.io/Curriculum-Explorer/bettws-maths-hub.html | https://claude.ai/artifact/G7ZgXPAjHHUDJkphQ8K5ty |
 | PFA Curriculum Hub | https://bertieharris2-cpu.github.io/Curriculum-Explorer/bettws-pfa-hub.html | https://claude.ai/artifact/7ecDGZ4qhk3cJs66RNoXBf |
 
@@ -40,8 +45,8 @@ like an app and works in the woods.
    It runs **validate → extract → build → record** and then commits the dataset, `CHANGES.md`
    and `build/manifest.json` and pushes. GitHub Pages rebuilds every page from the push within
    a few minutes (progress under the **Actions** tab).
-3. Ask Claude to republish the two hub files in `out/` to their claude.ai links above (and the
-   Explorer to its link, if it has one). Those links stay the same.
+3. Ask Claude to republish the four files in `out/` to their claude.ai links above. Those links
+   stay the same.
 
 Each step is also its own command: `make validate`, `make build` (everything into `out/`),
 `make site` (the GitHub Pages copy in `site/`), `make serve` (open `site/` locally).
@@ -61,16 +66,29 @@ WAS / NOW format: statements added, retired, reworded or moved since the last re
 build, by code and strand, plus the live counts by curriculum and strand. The record it
 compares against is `build/manifest.json`; commit both with the dataset.
 
-## The B Squared step column
+## The dataset as the pages read it
 
-`bsquared_step` on `Bettws_Statements` is coming from Bertie (v1.22 or later). It holds the
-nearest B Squared step for each statement, one value (`2.2`) or several (`2.1, 2.2`), using the
-labels of the BSquared_Archive sheet (`1.1` to `3.3`, and `Pre-4` to `Pre-6`). Until then, and
-for any statement left blank, the value is "not set": the build does not fail, nothing is
-guessed, and the build report counts how many live statements still have no step. When steps
-exist the Explorer shows them as a small `B²` chip on each statement, lets staff filter search
-results by step, and pre-fills the learning intention card's progression line from the chosen
-statements.
+- **Statements:** `Bettws_Statements`, `status = live` only. The main view shows
+  `curriculum = main`; the PFA section shows `pfa_class = PFA-direct` across both curricula.
+- **Small steps and questions:** every sheet named `*_Layers` (NCP_WPS1, NCP_WPS2, NCP_WPS3,
+  FDP, Money, Time, Measures, Shape, PDM, AR, DUR, Statistics, Probability, Algebra), plus
+  `Algebra_WPS3_Detail` and `PFA_Layers`. A blank `ref` repeats the one above it. Staff see:
+  L2-step and L2-detail as **small steps** (L2-subdetail nested, L2-variation as "any of these
+  count"), L3-probe and L3-pattern-probe as **questions to ask**, L3-ask-yourself as **ask
+  yourself**, L2-what-counts, L3-misconception as "watch for", and the teaching notes. Working
+  rows (L1-note, pending, ruling, wording proposals) stay in the hubs. Phase big ideas
+  (L1-bigidea) head the number spine's phases; level ideas (L1-level-idea) head the level columns.
+- **B Squared:** `bsquared_step` holds one or several steps (`2.1, 2.2`) in the labels of the
+  BSquared_Archive sheet, or a WPS fallback label (`WPS 2.1`, with an optional `+`) where
+  B Squared has nothing close. The Explorer shows the value as a small `B²` chip, pre-fills
+  the learning intention card's progression line from the B Squared steps of the chosen
+  statements (fallback labels are shown but never written on the card), and the validator
+  accepts both sets of labels and nothing else. `BSquared_Links` is Bertie's record and is not
+  read by the pages.
+- **Enquiries:** `Enquiry_Links`, read-only, phase by phase.
+- Never shown to staff: BSquared_Archive, BSquared_Links, Gaps_Register, Checks, Mappings,
+  CfW_Reference, README, and the columns `qc_verdict`, `qc_comment`, `source`,
+  `boundary_note`, `ladder_note`, `notes`.
 
 ## Files
 
@@ -80,13 +98,20 @@ statements.
 | `validate.py` | the checks, the build report and `CHANGES.md` (`--record`) |
 | `extract.py` | reads the workbook into `out/data.json` (hubs) and `out/explorer-data.json` (staff) |
 | `build.py` | bakes the pages: `out/` by default, `site/` with `--site` |
-| `explorer/` | the staff app: `index.html` shell, `app.css`, `app.js`, `design-tokens.json` (the design system's tokens, mirrored), `fonts/` (Atkinson Hyperlegible, OFL), `assets/` (logo, faces), `vendor/` (jsPDF, MIT), `sw.js` (offline cache for the site copy) |
+| `explorer/index.html` | the Explorer's shell |
+| `explorer/proto-core.css` | the stylesheet of Bertie's reviewed prototype (31-10), lifted verbatim: change the look here |
+| `explorer/app.css` | additions: the PFA colour, print, the card maker, the text-size variables |
+| `explorer/app.js` | the app: browse, strand rail, map, PFA, enquiries, search, basket, card maker, print, review |
+| `explorer/shapes.css`, `explorer/shapes.js` | "How strands are taught", the prototype's look-book module (Bertie's version only) |
+| `explorer/fonts/` | Lexend (OFL) and Atkinson Hyperlegible (OFL) |
+| `explorer/assets/`, `explorer/vendor/` | the logo and faces image; jsPDF (MIT) |
 | `explorer/private/` | git-ignored: the learner font for the card, if you have it (see below) |
+| `explorer/design-tokens.json` | the first design system's tokens, kept for reference |
 | `hub_template.html` | the two hubs; `MODE` = `main` or `pfa` |
 | `index_template.html` | the GitHub Pages landing page |
 | `build/manifest.json` | the last recorded build, for the change report |
 | `CHANGES.md` | the WAS / NOW change log |
-| `tests/explorer.test.js` | drives the built Explorer in headless Chromium (`node tests/explorer.test.js`) |
+| `tests/explorer.test.js` | drives both built Explorers in headless Chromium (`node tests/explorer.test.js`) |
 | `CLAUDE.md` | the standing rules every Claude Code session reads first |
 | `.github/workflows/pages.yml` | validates, builds and publishes the GitHub Pages site |
 
@@ -95,33 +120,28 @@ The browser test needs Playwright with Chromium.
 
 ## The staff Explorer
 
-- **Home:** "Browse the curriculum", and "My pupils" greyed out until phase 2.
-- **Browse:** strand → progression step → statements, or the strand-by-step map as an
-  alternative entry. The number spine is shown by level and phase ("WPS 2.2 · Phase 4 ·
-  Unitising"). Algebra WPS 3 is in teaching order.
-- **Statement card:** the "I can…" text exactly as the dataset has it, its code small at the
-  end, "Why this matters" where a purpose line exists, level and ladder/exposure chips, and
-  "Small steps and questions" behind a tap (L2 rows, L3 probes, the NCP "what counts" lines).
-- **Search** across statement text, purpose lines and codes, with Ladder / Met again and again
-  filters and, once the column exists, a B Squared step filter.
-- **PFA section:** a clearly separate mode in the PFA colour with the Outcomes (life statements
-  by area and `sort_order`), the Destinations (PFA-direct maths beyond the spine, by `pfa_area`)
-  and the Number Route (the spine: goals in full, stepping stones quieter, main-only hidden).
-- **Enquiries:** the mapped enquiries from Enquiry_Links, read-only, phase by phase, with the
-  maths nested under the life goal it serves, and the line "Have an idea? Bring it to Bertie
-  and he'll map it."
-- **Print this list:** A4 with the green-and-gold double frame on every page; a phase or
-  section title never strands at the foot of a page away from its statements; no text shrinks.
-- **Learning intentions:** every statement has "Add to learning intentions". Chosen statements
-  collect in a basket (up to six, and it says so plainly when full). "Make the card" opens a
-  rebuild of the standalone Learning Intentions tool: date, up to six editable intentions with
-  three faces on every row, live preview of one card and the whole A4 page, adjustable width
-  (two across at 96 mm or narrower), copies, PDF download, open-to-print, and favourites with
-  export and import (the file is the same format as the standalone tool's). The progression
-  line shows the B Squared steps of the chosen statements and is left blank where none is
-  recorded; staff can also switch steps on and off themselves. No pupil names go on the card.
-- **Bertie's version** (`explorer-bertie/`) is the same app with the phase 2 "Profile builder"
-  marked out on Home. The builder itself is phase 2.
+- **Browse:** the strands as tiles in six families, each with its teaching shape (climb in
+  order, climb then keep using it, measure it, come round again, picked up every day) and
+  which levels it has. The side menu lists the same strands.
+- **A strand:** its levels side by side on a rail (swipe, the arrows, or the level bar), rising
+  like stairs for a ladder strand, with the joins between levels named; or one level at a time.
+  The number spine's phases head each column with their big idea.
+- **A statement:** the "I can…" text exactly as the dataset has it, its code small at the end,
+  the `B²` chip, "Why this matters" where a purpose line exists, and behind the chevron its
+  small steps as bullets, "any of these count", what counts, questions to ask, ask yourself,
+  watch for and teaching notes. "Show all small steps" opens a whole strand at once.
+- **Curriculum map:** strands down the side, levels across, darker tiles for more statements.
+- **Search** across statement text, purpose lines, codes and small steps, grouped by strand.
+- **Preparing for adulthood:** its own plum mode with the Outcomes, the Destinations and the
+  Number Route (goals in full, stepping stones quieter, main-only hidden).
+- **Enquiries:** the mapped enquiries, read-only, phase by phase.
+- **Print:** A4 with the green-and-gold double frame on every page; a phase heading never
+  strands at the foot of a page; no text shrinks.
+- **Learning intentions:** the + on any statement collects up to six; the card maker is a
+  rebuild of the standalone Learning Intentions tool (editable rows with faces, card and page
+  preview, adjustable width, copies, PDF download, open-to-print, favourites with export and
+  import). The progression line is pre-set from the B Squared steps of the chosen statements.
+- **My pupils** is marked for phase 2.
 
 ### The learner font
 
@@ -143,24 +163,24 @@ Helvetica, and the preview uses the system font.
   `strand`); Number Route = the spine with PFA-direct in full, feeders quieter,
   curriculum-internal hidden.
 - Statement codes sit at the end of the line, small. Bettws ids are never renumbered.
-- Ladder cells are teal, repeated-exposure cells sand, always with the word; `ladder_note`
-  containing PROVISIONAL is flagged in the hubs as awaiting Bertie's tick (staff never see it).
+- Ladder and repeated-exposure always carry a word; `ladder_note` containing PROVISIONAL is
+  flagged in the hubs as awaiting Bertie's tick (staff never see it).
 - Algebra WPS 3 is shown in `presentation_order` (equals sign first), not code order.
-- Print: A4, a phase/step bar never strands away from its statements (`.keep` wrapper around
-  heading + first card, `break-inside: avoid` on cards). Never shrink text to save pages.
+- Print: A4, a phase heading never strands away from its statements (`.keep` wraps heading +
+  first statement, rows never split). Never shrink text to save pages.
 - Strand codes always appear with a plain-language reminder (`STRAND_SHORT` in extract.py).
 
 ## Known dataset quirks surfaced by the pages (not page bugs)
 - PDM, Angles & Rotation and Probability statements carry level "WPS 2.3" although ruled
   one collapsed WPS 2 level — they appear in the 2.3 column of the structure grid and map.
 - Layer refs like `STAT-3-30..35` (ranges) attach at strand level, not per statement.
-- Layer rows for `PDM-3-05`, `SHP-3-05`, `CAL-3-05` and `PFA-MM-03` point at retired statements
-  and are dropped (listed by `make validate`).
+- Layer rows for `PDM-3-05`, `SHP-3-05`, `CAL-2.1-01`, `CAL-3-05` and `PFA-MM-03` point at
+  retired or split statements and are dropped (listed by `make validate`).
 - Enquiry_Links rows with DCF codes are digital-competence outcomes, not Bettws statements;
-  the Explorer shows their task text without a card.
+  the Explorer shows their task text without a link.
 
 ## Adding a view
 Hubs: add an entry to `VIEWS` in `hub_template.html`, a `vName()` renderer, and a branch in
-`renderMain()`. Explorer: add a route in `render()` in `explorer/app.js` and a `vName()`
-screen; use `card(s, opts)` for statements and `group()` / `phaseGroups()` for grouping so
-the print rules come for free.
+`renderMain()`. Explorer: add a page function in `explorer/app.js`, a name in `fromHash()` and
+the `PG` table in `render()`, and use `stmt(s, opts)` for statements so the small steps, the
+basket button and the print rules come for free.

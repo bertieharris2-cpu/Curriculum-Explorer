@@ -34,19 +34,35 @@ Explorer must not carry their working columns or views.
   probing questions (L3 rows) sit behind a tap.
 - Staff never see: BSquared_Archive, Gaps_Register, Checks, Mappings, CfW_Reference, README, or
   the columns `qc_verdict`, `qc_comment`, `source`, `boundary_note`, `ladder_note`, `notes`.
-- `bsquared_step` (coming from Bertie, v1.22 or later): one or several B Squared steps per
-  statement (1.1–3.3, Pre-4 to Pre-6). Missing or unknown values are "not set": the build must
-  not fail and must not guess. The learning intention card's progression line is left blank
-  for a statement with no step.
+- `bsquared_step` (from v1.22): one or several B Squared steps per statement (1.1–3.3, Pre-4 to
+  Pre-6), or a WPS fallback label ("WPS 1", "WPS 2.1", "WPS 2.2", "WPS 2.3", "WPS 2.1/2.2",
+  "WPS 3", optionally with "+") where B Squared has no equivalent (ruled 01-11-26). Anything
+  else is "not set": the build must not fail and must not guess. The card's progression line
+  shows B Squared steps only; a fallback label is shown as a chip but never written on the card.
+- Layer sheets are found by name (every `*_Layers` sheet, plus `Algebra_WPS3_Detail` and
+  `PFA_Layers`); a blank `ref` repeats the one above. Staff see L2-step / L2-detail (small steps),
+  L2-subdetail (nested), L2-variation, L3-probe and L3-pattern-probe (questions to ask),
+  L3-ask-yourself (for the adult), L2-what-counts, L3-misconception, and the teaching notes
+  (L1-intro, L1-teaching-note, L2-advice, L1-example, L1-related, L1-secure-first). Working rows
+  (L1-note, pending, ruling, L1-wording-proposal, L1-proposed-statement, L1-nsm-ref,
+  L1-teach-order, context-tag) stay in the hubs.
 - Strand codes always carry a plain-language reminder (`STRAND_SHORT` in `extract.py`).
 
 ## Design rules
 
-- Follow the Bettws Curriculum Explorer design system (`explorer/design-tokens.json`, mirrored
-  from https://claude.ai/artifact/DzQhsWeqeNxwiV4RWLrHZ5). Every colour, size and type value is
-  a token; no hard-coded colours; corner radius 0 everywhere; Atkinson Hyperlegible Next.
-- Orange (`accent`) is only the active-state bar, the one hero button on a screen, and a small
-  confirmation highlight. Never text, never a large background.
+- The look is Bertie's reviewed prototype of 31-10 (Claude Design on Opus): `explorer/proto-core.css`
+  is its stylesheet, lifted verbatim, and `explorer/app.css` adds only what the real app needs
+  (PFA mode, print, the card maker). Change the look there, not in the markup. Lexend for text,
+  Atkinson Hyperlegible Mono for codes, small default type (13.5px) with the three-step text-size
+  control; one green side menu of strands in six families; levels side by side on a rail you
+  slide across; statements as plain rows that open into bulleted small steps; corner radius 0.
+  The design system artifact (https://claude.ai/artifact/DzQhsWeqeNxwiV4RWLrHZ5) still describes
+  the first build and needs bringing into line with this look.
+- Orange (`--flame`) is only the active-state mark, the one main button on a screen and the
+  chosen state of the + button. Never text, never a large background.
+- Bertie's version (`explorer-bertie`) alone carries "How strands are taught" (`explorer/shapes.js`,
+  the prototype's look-book module) and Review mode (notes to the artifact's `db`). The staff
+  version never gets either: no database, nothing tracked.
 - Never rely on colour alone: ladder/exposure, PFA and gaps always carry a word or icon.
 - Plain British English, sentence case, no emoji, no codes as headings.
 - Print: A4, the green-and-gold double frame on every page, never shrink text to save pages, and
@@ -66,5 +82,11 @@ Explorer must not carry their working columns or views.
 ## Checks
 
 - `make validate` (dataset), `make build` (everything into `out/`), `make site` (GitHub Pages
-  copy). `tests/explorer.test.js` drives the built Explorer in headless Chromium:
-  `node tests/explorer.test.js`.
+  copy). `tests/explorer.test.js` drives both built Explorers in headless Chromium:
+  `node tests/explorer.test.js` (`SHOTS=1` saves screenshots and a print PDF to `out/shots/`).
+
+## Links
+
+- Staff Explorer: https://claude.ai/artifact/Y32QAUiZvCjnSHR4Nn14Jf · Bertie's version (review
+  notes, strand shapes): https://claude.ai/artifact/EwortvdBmz4MYYCVGdoBTm · GitHub Pages:
+  https://bertieharris2-cpu.github.io/Curriculum-Explorer/ · the hubs: see `build.py`.

@@ -27,15 +27,15 @@ CHANGES = os.path.join(HERE, 'CHANGES.md')
 REQUIRED = {
   'Bettws_Statements': ['bettws_id','curriculum','strand','sub_strand','level','statement','headline','status','pfa_class',
                         'phase_number','phase_title','notes','delivery','thread_tags','purpose','sort_order','pfa_area','ladder_or_exposure'],
-  'NCP_WPS3_Layers': ['layer','ref','text'], 'FDP_Layers': ['layer','ref','text'], 'Shape_Layers': ['layer','ref','text'],
-  'PDM_Layers': ['layer','ref','text'], 'DUR_Layers': ['layer','ref','text'], 'Statistics_Layers': ['layer','ref','text'],
-  'Algebra_WPS3_Layers': ['layer','ref','text'],
   'Algebra_WPS3_Detail': ['bettws_id','presentation_order','row_kind','text'],
   'PFA_Layers': ['statement_id','layer','text'],
   'Enquiry_Links': ['enquiry','phase_no','phase','bettws_id','kind','task'],
   'Gaps_Register': ['gap_id','item','status','note'], 'New_Learning_Order': ['order','phase','item'], 'README': [],
 }
 BSQUARED_STEPS = ['Pre-4','Pre-5','Pre-6','1.1','1.2','2.1','2.2','2.3','3.1','3.2','3.3']
+# WPS fallback labels (ruled 01-11-26) for ladder statements with no B Squared equivalent, each optionally with '+'.
+WPS_FALLBACK = ['WPS 1','WPS 2.1','WPS 2.2','WPS 2.3','WPS 2.1/2.2','WPS 3']
+def label_ok(p): return p in BSQUARED_STEPS or p in WPS_FALLBACK or (p.endswith('+') and p[:-1] in WPS_FALLBACK)
 ID_SHAPE = re.compile(r'\b[A-Z]{2,4}-(?:W1-P\d+-|\d(?:\.\d)?-|M-|[A-Z]{2}-)\d+[A-Z]?\b')
 
 fails, warns, info = [], [], []
@@ -58,7 +58,9 @@ VERSION = 'v%d.%d' % vernum(src) if src else '?'
 
 x = pd.ExcelFile(src) if src and not fails else None
 if x is not None:
-    for sheet, cols in REQUIRED.items():
+    layer_sheets = [s for s in x.sheet_names if s.endswith('_Layers') and s != 'PFA_Layers']
+    if not layer_sheets: fails.append('No *_Layers sheet found.')
+    for sheet, cols in list(REQUIRED.items()) + [(s, ['layer','ref','text']) for s in layer_sheets]:
         if sheet not in x.sheet_names:
             fails.append('Sheet %s is missing.' % sheet); continue
         have = list(x.parse(sheet, nrows=0).columns)
@@ -74,10 +76,12 @@ if x is not None and not fails:
     all_ids = set(df.bettws_id.dropna().astype(str))
     live_ids = set(live.bettws_id.astype(str))
     id_re = re.compile('|'.join(sorted((re.escape(i) for i in all_ids), key=len, reverse=True)))
-    for sheet in ['NCP_WPS3_Layers','FDP_Layers','Shape_Layers','PDM_Layers','DUR_Layers','Statistics_Layers','Algebra_WPS3_Layers']:
-        d = x.parse(sheet)
+    for sheet in layer_sheets:
+        d = x.parse(sheet); last = ''
         for _, r in d.iterrows():
             ref = str(clean(r['ref']) or '')
+            if ref: last = ref
+            else: ref = last                      # a blank ref repeats the one above (merged cell)
             known = set(id_re.findall(ref))
             for k in known:
                 if k not in live_ids: warns.append('%s: "%s" names %s, which is not live; the row is dropped.' % (sheet, ref, k))
@@ -113,11 +117,12 @@ if x is not None and not fails:
             v = clean(r['bsquared_step'])
             if v is None: empty += 1; continue
             if isinstance(v, float) and v == int(v): v = str(v)
-            parts = [p.strip() for p in re.split(r'[,;/·]+', str(v)) if p.strip()]
+            parts = [p.strip() for p in re.split(r'[,;/·]+(?!\d)', str(v)) if p.strip()]
             for p in parts:
-                if p not in BSQUARED_STEPS: bad.append('%s: %s' % (r['bettws_id'], p))
-        if bad: warns.append('bsquared_step has labels that are not B Squared steps (ignored, never guessed): %s.' % ', '.join(bad))
-        info.append('%d of %d live statements have no B Squared step yet.' % (empty, n))
+                if not label_ok(p): bad.append('%s: %s' % (r['bettws_id'], p))
+        if bad: warns.append('bsquared_step has labels that are neither B Squared steps nor WPS fallback labels (ignored, never guessed): %s.' % ', '.join(bad))
+        ladder_empty = sum(1 for _, r in live.iterrows() if r['ladder_or_exposure'] == 'Ladder' and clean(r['bsquared_step']) is None)
+        info.append('%d of %d live statements have no B Squared step (%d of them ladder statements).' % (empty, n, ladder_empty))
     else:
         info.append('No bsquared_step column yet: all %d live statements count as "no B Squared step". The card line is left blank for them.' % n)
 

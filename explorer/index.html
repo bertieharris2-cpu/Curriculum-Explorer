@@ -4,40 +4,48 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#33503c" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#2d4637" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#1b3326">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Curriculum">
-<meta name="description" content="Browse the Bettws maths curriculum: strands, progression steps, statements, small steps and probing questions.">
+<meta name="description" content="Browse the Bettws maths curriculum: strands, progression steps, statements, small steps and questions to ask.">
 <title>__TITLE__</title>
 __HEAD_EXTRA__
 <style>
 __FONT_CSS__
 </style>
 <style>
-__TOKENS_CSS__
+__CORE_CSS__
 </style>
 <style>
 __APP_CSS__
 </style>
+__SHAPES_CSS__
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div id="app" class="bx">
-  <header id="appbar" class="bx-appbar"></header>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <!-- On paper this is a table: its header and footer rows repeat on every printed page and
-       reserve the room for the double frame. On screen every part of it is a plain block. -->
-  <table class="sheet" role="presentation">
-    <thead><tr><td class="sheet-space"></td></tr></thead>
-    <tbody><tr><td class="sheet-body"><main id="main" class="page"></main></td></tr></tbody>
-    <tfoot><tr><td class="sheet-space"></td></tr></tfoot>
-  </table>
-  <footer class="foot">
-    <span>Bettws Curriculum Explorer · dataset __VERSION__ · built __BUILT__</span>
-    <span class="noprint">No login, no server, nothing tracked. Works offline once opened.</span>
-  </footer>
+<div class="app" id="app" data-menu="wide" data-theme="light" data-review="off" data-pfa="off" data-variant="__VARIANT__">
+  <aside class="side" id="side" aria-label="Menu"></aside>
+  <div class="main">
+    <header class="top" id="top">
+      <label class="search"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 17a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13z"/><path d="M15.5 15.5L20 20"/></svg><input id="q" type="search" autocomplete="off" autocapitalize="off" placeholder="Search statements and small steps  ( press / )" aria-label="Search statements and small steps"></label>
+      <span class="spacer"></span>
+      <div class="seg" id="szs" role="radiogroup" aria-label="Text size"></div>
+      <button class="tbtn" id="thbtn" data-act="theme" title="Light or dark"></button>
+      <button class="tbtn" id="fsbtn" data-act="full"></button>
+      <button class="tbtn" id="prbtn" data-act="print" title="Print this list on A4" hidden></button>
+      <button class="tbtn" id="rvbtn" data-act="review" title="Review mode: leave notes on any page as you browse" hidden></button>
+    </header>
+    <!-- On paper this is a table whose header and footer rows repeat on every page and keep the
+         content inside the green-and-gold frame. On screen its parts have no box of their own. -->
+    <table class="sheet" role="presentation">
+      <thead><tr><td class="sheet-space"></td></tr></thead>
+      <tbody><tr><td class="sheet-body"><main class="view" id="view"></main></td></tr></tbody>
+      <tfoot><tr><td class="sheet-space"></td></tr></tfoot>
+    </table>
+  </div>
+  <div class="rvbar" id="rvbar" hidden role="region" aria-label="Review mode"></div>
+  <aside class="rvpanel" id="rvpanel" hidden aria-label="Note on this page"></aside>
+  <div class="toast" id="toast" hidden role="status" aria-live="polite"></div>
 </div>
 <div class="print-frame" aria-hidden="true"></div>
 <script id="data" type="application/json">__DATA__</script>
@@ -47,6 +55,7 @@ __APP_CSS__
 <script>
 window.LI_ASSETS = __ASSETS__;
 </script>
+__SHAPES_JS__
 <script>
 __APP_JS__
 </script>

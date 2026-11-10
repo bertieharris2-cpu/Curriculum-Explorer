@@ -1,15 +1,15 @@
 {
-"version": "v1.21",
-"built": "2026-10-31",
+"version": "v1.22",
+"built": "2026-11-10",
 "counts": {
-"total": 511,
+"total": 509,
 "curriculum": {
-"main": 447,
+"main": 445,
 "pfa": 60,
 "both": 4
 },
 "strand": {
-"Number, Calculation & Pattern": 206,
+"Number, Calculation & Pattern": 204,
 "Statistics": 45,
 "Money": 21,
 "Fractions, Decimals & Percentages": 21,
@@ -665,7 +665,7 @@
 "strand": "Temperature",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Records temperature over time and represents it as data."
+"text": "I can record temperature over time and show it as data."
 },
 "FIT-2-01": {
 "strand": "Shape in Use — Fitting & Constructing",
@@ -833,13 +833,13 @@
 "strand": "Angles & Rotation",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Recognises and uses right angles; compares angles as bigger or smaller turns."
+"text": "I can recognise and use right angles, and compare angles as bigger or smaller turns."
 },
 "AR-3-03": {
 "strand": "Angles & Rotation",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Links fractions of a full turn to sectors of a circle."
+"text": "I can link fractions of a full turn to the slices of a circle."
 },
 "AR-3-04": {
 "strand": "Angles & Rotation",
@@ -857,7 +857,7 @@
 "strand": "Angles & Rotation",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Estimates the size of a sector without calculating it."
+"text": "I can estimate the size of a slice without calculating it."
 },
 "PDM-2.3-01": {
 "strand": "Position, Direction & Movement",
@@ -1007,49 +1007,37 @@
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Decides what data is needed and explains why it is relevant."
+"text": "I can decide what data I need to collect to answer a question, and explain why it is relevant."
 },
 "STAT-3-02": {
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Identifies types of data — numbers, frequencies, times, measurements — and matches them to questions."
-},
-"STAT-3-03": {
-"strand": "Statistics",
-"level": "WPS 3",
-"curriculum": "main",
-"text": "Collects discrete data accurately (counted, separate values)."
-},
-"STAT-3-04": {
-"strand": "Statistics",
-"level": "WPS 3",
-"curriculum": "main",
-"text": "Collects continuous data accurately (measured values within a range)."
+"text": "I can identify different types of data — numbers, frequencies, times, measurements — and match them to different questions."
 },
 "STAT-3-05": {
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Chooses suitable methods for the question and the data type, and explains why."
+"text": "I can choose suitable methods for collecting data based on the question and the type of data, and explain why my method is appropriate."
 },
 "STAT-3-06": {
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Adapts and refines a collection method — changing rules, timing or recording structures when problems appear. (Devising from scratch: extension, not the bar.)"
+"text": "I can adapt and refine a collection method when problems appear — changing the rules, the structure or the tools so the data stays fair and clear."
 },
 "STAT-3-07": {
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Collects carefully and accurately, checking as they go."
+"text": "I can collect data accurately, checking my work as I go, using both non-digital and digital methods."
 },
 "STAT-3-08": {
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Collects data without digital technology — tables, tallies, recording sheets."
+"text": "I can collect data without digital technology — tables, tallies and recording sheets."
 },
 "STAT-3-09": {
 "strand": "Statistics",
@@ -1061,31 +1049,13 @@
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "I can spot problems with data — irrelevant, missing or incorrect values — and explain why they matter."
+"text": "I can identify problems with data — irrelevant information, missing values, results that fall outside a sensible range — and explain why they are a problem."
 },
 "STAT-3-12": {
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Represents data accurately, including bar charts and line graphs."
-},
-"STAT-3-13": {
-"strand": "Statistics",
-"level": "WPS 3",
-"curriculum": "main",
-"text": "Uses titles, labels, axes and keys so a chart can be read without explanation."
-},
-"STAT-3-14": {
-"strand": "Statistics",
-"level": "WPS 3",
-"curriculum": "main",
-"text": "Chooses and applies suitable scales, including one unit representing more than one value, and explains what each step represents."
-},
-"STAT-3-15": {
-"strand": "Statistics",
-"level": "WPS 3",
-"curriculum": "main",
-"text": "Plots with precision, and adjusts if the layout makes the data hard to read."
+"text": "I can make a bar chart, choosing and applying a suitable scale myself."
 },
 "STAT-3-18": {
 "strand": "Statistics",
@@ -1097,19 +1067,19 @@
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Calculates totals and differences from data, including multi-step questions."
+"text": "I can calculate totals and differences from data to answer questions, including questions that need more than one step."
 },
 "STAT-3-21": {
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Identifies the mode and the range, and uses them to describe a data set."
+"text": "I can find the most common value (mode) and the spread between highest and lowest (range), and use them to describe a set of data."
 },
 "STAT-3-22": {
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Finds the median of a small ordered data set — physically first (lining up, taking the middle) — and uses it to describe what is typical."
+"text": "I can find the middle value (median) of a small ordered data set — physically first, by lining up and taking the middle — and use it to describe what is typical."
 },
 "STAT-3-23": {
 "strand": "Statistics",
@@ -1127,13 +1097,13 @@
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "I can decide how well the data answers the question, and recognise what it cannot tell us."
+"text": "I can decide how well my data answers the enquiry question, explain what it suggests, and recognise what it cannot tell us."
 },
 "STAT-3-26": {
 "strand": "Statistics",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Poses a follow-on question and suggests what data would answer it."
+"text": "I can use the results of an enquiry to pose a follow-on question and suggest what data would be needed to answer it."
 },
 "PROB-2.3-01": {
 "strand": "Probability",
@@ -1151,13 +1121,13 @@
 "strand": "Probability",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Orders events by likelihood and justifies the order."
+"text": "I can use likelihood language accurately about real events — impossible, unlikely, likely, certain — and order events by likelihood."
 },
 "PROB-3-02": {
 "strand": "Probability",
 "level": "WPS 3",
 "curriculum": "main",
-"text": "Runs repeated trials in a game and records what actually happened."
+"text": "I can run repeated trials in a game and record what actually happened."
 },
 "PROB-3-03": {
 "strand": "Probability",
@@ -1565,13 +1535,7 @@
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1",
 "curriculum": "main",
-"text": "I can exchange ten ones for a ten, and back again, and explain what happened."
-},
-"2.1-06": {
-"strand": "Number, Calculation & Pattern",
-"level": "WPS 2.1",
-"curriculum": "main",
-"text": "I can build any teen number as one ten and some ones, and partition it."
+"text": "I can exchange ten ones for a ten and back again, build any teen number as one ten and some ones — 16 = 10 + 6 — and move between the objects, the picture and the numeral."
 },
 "2.1-07": {
 "strand": "Number, Calculation & Pattern",
@@ -1584,12 +1548,6 @@
 "level": "WPS 2.1",
 "curriculum": "main",
 "text": "I can say teen numbers both ways — thirteen, and ten-three."
-},
-"2.1-09": {
-"strand": "Number, Calculation & Pattern",
-"level": "WPS 2.1",
-"curriculum": "main",
-"text": "I can move between the dienes, the picture and the numeral."
 },
 "2.1-10": {
 "strand": "Number, Calculation & Pattern",
@@ -2165,211 +2123,211 @@
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Makes groups with the same number in each"
+"text": "I can make groups with the same number in each."
 },
 "M1-02": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Says how many groups there are, and how many altogether"
+"text": "I can say how many groups there are, and how many altogether."
 },
 "M1-03": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Notices when groups are NOT equal, and fixes it"
+"text": "I can notice when groups are NOT equal, and fix it."
 },
 "M1-04": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Uses the language: groups of, lots of, each, altogether"
+"text": "I can use the words groups of, lots of, each and altogether."
 },
 "M2-01": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Shares a small quantity fairly between two or three, one at a time"
+"text": "I can share a small quantity fairly between two or three, one at a time."
 },
 "M2-02": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Checks that shares are equal, and says how they know"
+"text": "I can check that the shares are equal, and say how I know."
 },
 "M2-03": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Halves small even numbers with objects"
+"text": "I can halve small even numbers with objects."
 },
 "M2-04": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Notices leftovers, without yet naming them as remainders"
+"text": "I can notice when there are some left over."
 },
 "M3-01": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Doubles any number to ten, then to twenty"
+"text": "I can double any number to ten, then to twenty."
 },
 "M3-02": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Halves even numbers to twenty"
+"text": "I can halve even numbers to twenty."
 },
 "M3-03": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Doubles multiples of ten, e.g. double 30"
+"text": "I can double multiples of ten, e.g. double 30."
 },
 "M3-04": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Meets ×2 notation alongside the doubling they already do"
+"text": "I can read ×2 and know it means the doubling I already do."
 },
 "M3-05": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Names the move: “I doubled it”"
+"text": "I can name the move: \"I doubled it\"."
 },
 "M4-01": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Counts in twos, fives and tens from zero"
+"text": "I can count in twos, fives and tens from zero."
 },
 "M4-02": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Counts objects arranged in twos and fives"
+"text": "I can count objects arranged in twos and fives."
 },
 "M4-03": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Notices the pattern in the numbers landed on"
+"text": "I can notice the pattern in the numbers I land on."
 },
 "M4-04": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Classifies numbers as odd or even by counting in twos"
+"text": "I can say whether a number is odd or even by counting in twos."
 },
 "M5-01": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Builds an array with real objects, e.g. 3 rows of 4"
+"text": "I can build an array with real objects, e.g. 3 rows of 4."
 },
 "M5-02": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Says what the array shows, e.g. three fours"
+"text": "I can say what the array shows, e.g. three fours."
 },
 "M5-03": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Sees that 3×4 and 4×3 are the same array turned round"
+"text": "I can see that 3×4 and 4×3 are the same array turned round."
 },
 "M5-04": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Meets × notation properly and reads it both ways"
+"text": "I can read × both ways: three fours, or three lots of four."
 },
 "M5-05": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Names the move: “I turned it round to make it easier”"
+"text": "I can name the move: \"I turned it round to make it easier\"."
 },
 "M6-01": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "SHARING: shares a quantity equally between a number of people"
+"text": "I can share a quantity equally between a number of people (sharing)."
 },
 "M6-02": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "GROUPING: works out how many groups of a given size fit, e.g. how many 3s in 12"
+"text": "I can work out how many groups of a size fit, e.g. how many 3s in 12 (grouping)."
 },
 "M6-03": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Recognises which question a real situation is asking"
+"text": "I can tell whether a real situation is asking me to share or to group."
 },
 "M6-04": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Meets ÷ notation for both meanings"
+"text": "I can read ÷ and know it can mean sharing or grouping."
 },
 "M6-05": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Extends fact families to × and ÷, e.g. from 3×4=12 gives 12÷4=3"
+"text": "I can give the ÷ fact that goes with a × fact, e.g. from 3×4=12 I know 12÷4=3."
 },
 "M7-01": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Multiplies by ten using unitising, e.g. 6×10 is six tens"
+"text": "I can multiply by ten using tens, e.g. 6×10 is six tens."
 },
 "M7-02": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Derives ×5 as half of ×10, e.g. 6×5 is half of 60"
+"text": "I can work out ×5 as half of ×10, e.g. 6×5 is half of 60."
 },
 "M7-03": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Divides by ten and by five using the same reasoning"
+"text": "I can divide by ten and by five using the same reasoning."
 },
 "M7-04": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Names the move: “I did tens, then halved it”"
+"text": "I can name the move: \"I did tens, then halved it\"."
 },
 "M8-01": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Divides and notices there is a leftover"
+"text": "I can divide and notice when there is something left over."
 },
 "M8-02": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Says what the leftover means in the situation"
+"text": "I can say what the leftover means in the situation."
 },
 "M8-03": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Rounds up when the context demands it, e.g. buses, tins, boxes"
+"text": "I can round up when the situation needs it, e.g. buses, tins, boxes."
 },
 "M8-04": {
 "strand": "Number, Calculation & Pattern",
 "level": "WPS 2.1/2.2 spiral",
 "curriculum": "main",
-"text": "Rounds down when the context demands it, e.g. whole items you can afford"
+"text": "I can round down when the situation needs it, e.g. whole items I can afford."
 },
 "TTT-2.3-05": {
 "strand": "Time — Telling the Time",
@@ -3102,6 +3060,36 @@
 "level": "WPS 3",
 "curriculum": "main",
 "text": "I can explore the properties of numbers — factors, multiples, primes and squares."
+},
+"STAT-3-36": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can make a pictogram where one symbol represents more than one item, using a key."
+},
+"STAT-3-37": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can check that my chart matches the data I collected and notice if something looks wrong."
+},
+"STAT-3-38": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can question a claim made from data — asking how many people it is based on, who was asked, and whether the numbers actually support it."
+},
+"STAT-3-39": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can present the same true data in two different ways to create two different impressions, and explain how it was done."
+},
+"STAT-3-40": {
+"strand": "Statistics",
+"level": "WPS 3",
+"curriculum": "main",
+"text": "I can interpret data from real sources — adverts, news, sport, official figures — and say what it does and does not tell me."
 }
 }
 }

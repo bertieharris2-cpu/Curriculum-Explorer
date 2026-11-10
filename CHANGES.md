@@ -2,6 +2,210 @@
 
 Written by `validate.py --record` after each successful build. WAS is the last recorded build, NOW is this one.
 
+## v1.22 · built 2026-11-10
+
+WAS v1.21: 511 live statements. NOW v1.22: 509 live statements.
+
+### Added (5)
+- `STAT-3-36` · Statistics · WPS 3
+- `STAT-3-37` · Statistics · WPS 3
+- `STAT-3-38` · Statistics · WPS 3
+- `STAT-3-39` · Statistics · WPS 3
+- `STAT-3-40` · Statistics · WPS 3
+
+### Retired (no longer live) (7)
+- `2.1-06` · Number, Calculation & Pattern · WPS 2.1
+- `2.1-09` · Number, Calculation & Pattern · WPS 2.1
+- `STAT-3-03` · Statistics · WPS 3
+- `STAT-3-04` · Statistics · WPS 3
+- `STAT-3-13` · Statistics · WPS 3
+- `STAT-3-14` · Statistics · WPS 3
+- `STAT-3-15` · Statistics · WPS 3
+
+### Reworded (55)
+- `2.1-05` · Number, Calculation & Pattern · WPS 2.1
+  - WAS: I can exchange ten ones for a ten, and back again, and explain what happened.
+  - NOW: I can exchange ten ones for a ten and back again, build any teen number as one ten and some ones — 16 = 10 + 6 — and move between the objects, the picture and the numeral.
+- `AR-3-02` · Angles & Rotation · WPS 3
+  - WAS: Recognises and uses right angles; compares angles as bigger or smaller turns.
+  - NOW: I can recognise and use right angles, and compare angles as bigger or smaller turns.
+- `AR-3-03` · Angles & Rotation · WPS 3
+  - WAS: Links fractions of a full turn to sectors of a circle.
+  - NOW: I can link fractions of a full turn to the slices of a circle.
+- `AR-3-06` · Angles & Rotation · WPS 3
+  - WAS: Estimates the size of a sector without calculating it.
+  - NOW: I can estimate the size of a slice without calculating it.
+- `M1-01` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Makes groups with the same number in each
+  - NOW: I can make groups with the same number in each.
+- `M1-02` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Says how many groups there are, and how many altogether
+  - NOW: I can say how many groups there are, and how many altogether.
+- `M1-03` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Notices when groups are NOT equal, and fixes it
+  - NOW: I can notice when groups are NOT equal, and fix it.
+- `M1-04` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Uses the language: groups of, lots of, each, altogether
+  - NOW: I can use the words groups of, lots of, each and altogether.
+- `M2-01` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Shares a small quantity fairly between two or three, one at a time
+  - NOW: I can share a small quantity fairly between two or three, one at a time.
+- `M2-02` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Checks that shares are equal, and says how they know
+  - NOW: I can check that the shares are equal, and say how I know.
+- `M2-03` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Halves small even numbers with objects
+  - NOW: I can halve small even numbers with objects.
+- `M2-04` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Notices leftovers, without yet naming them as remainders
+  - NOW: I can notice when there are some left over.
+- `M3-01` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Doubles any number to ten, then to twenty
+  - NOW: I can double any number to ten, then to twenty.
+- `M3-02` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Halves even numbers to twenty
+  - NOW: I can halve even numbers to twenty.
+- `M3-03` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Doubles multiples of ten, e.g. double 30
+  - NOW: I can double multiples of ten, e.g. double 30.
+- `M3-04` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Meets ×2 notation alongside the doubling they already do
+  - NOW: I can read ×2 and know it means the doubling I already do.
+- `M3-05` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Names the move: “I doubled it”
+  - NOW: I can name the move: "I doubled it".
+- `M4-01` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Counts in twos, fives and tens from zero
+  - NOW: I can count in twos, fives and tens from zero.
+- `M4-02` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Counts objects arranged in twos and fives
+  - NOW: I can count objects arranged in twos and fives.
+- `M4-03` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Notices the pattern in the numbers landed on
+  - NOW: I can notice the pattern in the numbers I land on.
+- `M4-04` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Classifies numbers as odd or even by counting in twos
+  - NOW: I can say whether a number is odd or even by counting in twos.
+- `M5-01` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Builds an array with real objects, e.g. 3 rows of 4
+  - NOW: I can build an array with real objects, e.g. 3 rows of 4.
+- `M5-02` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Says what the array shows, e.g. three fours
+  - NOW: I can say what the array shows, e.g. three fours.
+- `M5-03` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Sees that 3×4 and 4×3 are the same array turned round
+  - NOW: I can see that 3×4 and 4×3 are the same array turned round.
+- `M5-04` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Meets × notation properly and reads it both ways
+  - NOW: I can read × both ways: three fours, or three lots of four.
+- `M5-05` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Names the move: “I turned it round to make it easier”
+  - NOW: I can name the move: "I turned it round to make it easier".
+- `M6-01` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: SHARING: shares a quantity equally between a number of people
+  - NOW: I can share a quantity equally between a number of people (sharing).
+- `M6-02` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: GROUPING: works out how many groups of a given size fit, e.g. how many 3s in 12
+  - NOW: I can work out how many groups of a size fit, e.g. how many 3s in 12 (grouping).
+- `M6-03` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Recognises which question a real situation is asking
+  - NOW: I can tell whether a real situation is asking me to share or to group.
+- `M6-04` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Meets ÷ notation for both meanings
+  - NOW: I can read ÷ and know it can mean sharing or grouping.
+- `M6-05` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Extends fact families to × and ÷, e.g. from 3×4=12 gives 12÷4=3
+  - NOW: I can give the ÷ fact that goes with a × fact, e.g. from 3×4=12 I know 12÷4=3.
+- `M7-01` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Multiplies by ten using unitising, e.g. 6×10 is six tens
+  - NOW: I can multiply by ten using tens, e.g. 6×10 is six tens.
+- `M7-02` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Derives ×5 as half of ×10, e.g. 6×5 is half of 60
+  - NOW: I can work out ×5 as half of ×10, e.g. 6×5 is half of 60.
+- `M7-03` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Divides by ten and by five using the same reasoning
+  - NOW: I can divide by ten and by five using the same reasoning.
+- `M7-04` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Names the move: “I did tens, then halved it”
+  - NOW: I can name the move: "I did tens, then halved it".
+- `M8-01` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Divides and notices there is a leftover
+  - NOW: I can divide and notice when there is something left over.
+- `M8-02` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Says what the leftover means in the situation
+  - NOW: I can say what the leftover means in the situation.
+- `M8-03` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Rounds up when the context demands it, e.g. buses, tins, boxes
+  - NOW: I can round up when the situation needs it, e.g. buses, tins, boxes.
+- `M8-04` · Number, Calculation & Pattern · WPS 2.1/2.2 spiral
+  - WAS: Rounds down when the context demands it, e.g. whole items you can afford
+  - NOW: I can round down when the situation needs it, e.g. whole items I can afford.
+- `PROB-3-01` · Probability · WPS 3
+  - WAS: Orders events by likelihood and justifies the order.
+  - NOW: I can use likelihood language accurately about real events — impossible, unlikely, likely, certain — and order events by likelihood.
+- `PROB-3-02` · Probability · WPS 3
+  - WAS: Runs repeated trials in a game and records what actually happened.
+  - NOW: I can run repeated trials in a game and record what actually happened.
+- `STAT-3-01` · Statistics · WPS 3
+  - WAS: Decides what data is needed and explains why it is relevant.
+  - NOW: I can decide what data I need to collect to answer a question, and explain why it is relevant.
+- `STAT-3-02` · Statistics · WPS 3
+  - WAS: Identifies types of data — numbers, frequencies, times, measurements — and matches them to questions.
+  - NOW: I can identify different types of data — numbers, frequencies, times, measurements — and match them to different questions.
+- `STAT-3-05` · Statistics · WPS 3
+  - WAS: Chooses suitable methods for the question and the data type, and explains why.
+  - NOW: I can choose suitable methods for collecting data based on the question and the type of data, and explain why my method is appropriate.
+- `STAT-3-06` · Statistics · WPS 3
+  - WAS: Adapts and refines a collection method — changing rules, timing or recording structures when problems appear. (Devising from scratch: extension, not the bar.)
+  - NOW: I can adapt and refine a collection method when problems appear — changing the rules, the structure or the tools so the data stays fair and clear.
+- `STAT-3-07` · Statistics · WPS 3
+  - WAS: Collects carefully and accurately, checking as they go.
+  - NOW: I can collect data accurately, checking my work as I go, using both non-digital and digital methods.
+- `STAT-3-08` · Statistics · WPS 3
+  - WAS: Collects data without digital technology — tables, tallies, recording sheets.
+  - NOW: I can collect data without digital technology — tables, tallies and recording sheets.
+- `STAT-3-10` · Statistics · WPS 3
+  - WAS: I can spot problems with data — irrelevant, missing or incorrect values — and explain why they matter.
+  - NOW: I can identify problems with data — irrelevant information, missing values, results that fall outside a sensible range — and explain why they are a problem.
+- `STAT-3-12` · Statistics · WPS 3
+  - WAS: Represents data accurately, including bar charts and line graphs.
+  - NOW: I can make a bar chart, choosing and applying a suitable scale myself.
+- `STAT-3-19` · Statistics · WPS 3
+  - WAS: Calculates totals and differences from data, including multi-step questions.
+  - NOW: I can calculate totals and differences from data to answer questions, including questions that need more than one step.
+- `STAT-3-21` · Statistics · WPS 3
+  - WAS: Identifies the mode and the range, and uses them to describe a data set.
+  - NOW: I can find the most common value (mode) and the spread between highest and lowest (range), and use them to describe a set of data.
+- `STAT-3-22` · Statistics · WPS 3
+  - WAS: Finds the median of a small ordered data set — physically first (lining up, taking the middle) — and uses it to describe what is typical.
+  - NOW: I can find the middle value (median) of a small ordered data set — physically first, by lining up and taking the middle — and use it to describe what is typical.
+- `STAT-3-25` · Statistics · WPS 3
+  - WAS: I can decide how well the data answers the question, and recognise what it cannot tell us.
+  - NOW: I can decide how well my data answers the enquiry question, explain what it suggests, and recognise what it cannot tell us.
+- `STAT-3-26` · Statistics · WPS 3
+  - WAS: Poses a follow-on question and suggests what data would answer it.
+  - NOW: I can use the results of an enquiry to pose a follow-on question and suggest what data would be needed to answer it.
+- `TEM-3-04` · Temperature · WPS 3
+  - WAS: Records temperature over time and represents it as data.
+  - NOW: I can record temperature over time and show it as data.
+
+### Moved (0)
+- none
+
+- Warning: PDM_Layers: "PDM-3-05" names PDM-3-05, which is not live; the row is dropped.
+- Warning: PDM_Layers: "PDM-3-05" names PDM-3-05, which is not live; the row is dropped.
+- Warning: Shape_Layers: "SHP-3-05 → PDM-3-02" names SHP-3-05, which is not live; the row is dropped.
+- Warning: Time_Layers: "CAL-2.1-01" names CAL-2.1-01, which is not live; the row is dropped.
+- Warning: Time_Layers: "CAL-2.1-01" names CAL-2.1-01, which is not live; the row is dropped.
+- Warning: Time_Layers: "CAL-2.1-01" names CAL-2.1-01, which is not live; the row is dropped.
+- Warning: Time_Layers: "CAL-2.1-01" names CAL-2.1-01, which is not live; the row is dropped.
+- Warning: Time_Layers: "CAL-2.1-01" names CAL-2.1-01, which is not live; the row is dropped.
+- Warning: PFA_Layers: rows for PFA-MM-03 point at a statement that is not live; dropped.
+- Warning: PFA_Layers: rows for CAL-3-05 point at a statement that is not live; dropped.
+- 509 live statements: both 4, main 445, pfa 60.
+- 238 of 509 live statements have no B Squared step (0 of them ladder statements).
+- Number, Calculation & Pattern: was 206 live statements, now 204.
+
 ## v1.21 · built 2026-10-31
 
 First recorded build: 511 live statements (both 4, main 447, pfa 60). Nothing earlier to compare with.

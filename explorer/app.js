@@ -467,7 +467,10 @@ function noteState() { const X = window.XP ? XP.state : {}; return { view: S.vie
 function loadLocal() { notes = store.get('notes', []); }
 function initDb() {
   if (!BERTIE) return;
-  const use = window.claude && window.claude.use ? window.claude.use('db') : Promise.resolve(null);
+  // The shared log lives in the artifact's db capability, declared on Bertie's version only; the
+  // staff build never reaches this line (BERTIE is false), so its page declares no database.
+  const CAP_DB = 'db';
+  const use = window.claude && window.claude.use ? window.claude.use(CAP_DB) : Promise.resolve(null);
   use.then(db => {
     if (!db) { dbState = 'local'; loadLocal(); renderReview(); return; }
     dbRef = db; const t = setTimeout(() => { if (dbState === 'connecting') { dbState = 'slow'; renderReview(); } }, 10000);
